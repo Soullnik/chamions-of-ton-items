@@ -39,6 +39,8 @@ body {
     background: #1a1a1a;
     color: #ffffff;
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -231,25 +233,141 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem;
+        padding: 1rem 0.5rem;
+        position: relative;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    .items-count {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .items-count p {
+        font-size: 1rem;
+    }
+
+    .items-count-details {
+        gap: 0.5rem;
+    }
+
+    .items-count-details span {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        flex: 0 1 auto;
+    }
+
+    nav button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .rarity-filter, .type-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem;
+        margin: 0.5rem 0;
+    }
+
+    .rarity-filter button, .type-filter button {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .items-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .item-card {
+        margin: 0.5rem 0;
+    }
+
+    /* Улучшаем читаемость на мобильных */
+    .item-name {
+        font-size: 1.3rem;
     }
 
     .item-stats {
-        grid-template-columns: 1fr;
+        font-size: 0.9rem;
     }
 
-    .ability-info {
+    .view-abilities-btn {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    /* Модальные окна на мобильных */
+    .modal-content {
+        margin: 0.5rem;
+        padding: 1rem;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-item-name {
+        font-size: 1.5rem;
+    }
+
+    .branch {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .ability-node {
+        padding: 0.8rem;
+    }
+
+    .ability-stats {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.3rem;
+    }
+
+    /* Стили для сетов на мобильных */
+    .set-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .set-name {
+        font-size: 1.4rem;
+    }
+
+    .set-items, .set-bonuses {
+        padding: 0.8rem;
+    }
+
+    .bonus-item {
+        padding: 0.6rem;
+    }
+}
+
+/* Улучшаем скроллинг на мобильных */
+@media (hover: none) {
+    .modal-content {
+        -webkit-overflow-scrolling: touch;
     }
 }
 
