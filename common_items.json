@@ -1,0 +1,1622 @@
+{
+  "weapons": {
+    "staves": [
+      {
+        "id": "oak_staff",
+        "name": "Дубовый посох",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 5,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Природная мощь",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Корни",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 4,
+                "effects": [
+                  {
+                    "type": "root",
+                    "duration": 1,
+                    "description": "Обездвиживает цель"
+                  }
+                ],
+                "description": "Обездвиживает цель на 1 ход"
+              },
+              {
+                "level": 3,
+                "name": "Древесная кора",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Увеличивает броню на 2 на 2 хода"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Сила земли",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Каменная кожа",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Значительно увеличивает защиту"
+                  },
+                  {
+                    "type": "slow",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Замедляет владельца"
+                  }
+                ],
+                "description": "Усиливает защиту, но замедляет"
+              },
+              {
+                "level": 3,
+                "name": "Землетрясение",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 6,
+                "area": "circle",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "knockdown",
+                    "duration": 1,
+                    "description": "Сбивает с ног"
+                  }
+                ],
+                "description": "Наносит урон по области и сбивает с ног"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Древняя мудрость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Природное исцеление",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "heal",
+                    "value": 5,
+                    "duration": 1,
+                    "description": "Лечит цель"
+                  },
+                  {
+                    "type": "heal_over_time",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Продолжает лечить цель"
+                  }
+                ],
+                "description": "Лечит цель и оставляет лечащий эффект"
+              },
+              {
+                "level": 3,
+                "name": "Благословение природы",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "cleanse",
+                    "duration": 1,
+                    "description": "Снимает негативные эффекты"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": 3,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Очищает от негативных эффектов и усиливает защиту"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "crystal_staff",
+        "name": "Кристальный посох",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Кристальная магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Кристальные осколки",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "area": "line",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "bleed",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Вызывает кровотечение"
+                  }
+                ],
+                "description": "Запускает осколки по линии"
+              },
+              {
+                "level": 3,
+                "name": "Кристальная броня",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "thorns",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Наносит урон атакующим"
+                  }
+                ],
+                "description": "Создает защитный барьер с шипами"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Призматическая сила",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Радужный луч",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "blind",
+                    "duration": 1,
+                    "description": "Ослепляет цель"
+                  }
+                ],
+                "description": "Мощный луч, который может ослепить"
+              },
+              {
+                "level": 3,
+                "name": "Призматический щит",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 3,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "reflect_magic",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Отражает часть магического урона"
+                  }
+                ],
+                "description": "Защитный щит, отражающий магию"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "telegram_staff",
+        "name": "Посох Дурова",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мощь мессенджера",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Массовая рассылка",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "area": "circle",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "spam",
+                    "duration": 2,
+                    "description": "Спамит сообщениями, отвлекая врагов"
+                  }
+                ],
+                "description": "Рассылает спам по области"
+              },
+              {
+                "level": 3,
+                "name": "Секретный чат",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "stealth",
+                    "duration": 2,
+                    "description": "Делает цель невидимой"
+                  }
+                ],
+                "description": "Скрывает союзника от врагов"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Каналы влияния",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Массовый пинг",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 4,
+                "area": "all",
+                "effects": [
+                  {
+                    "type": "slow",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Замедляет всех врагов"
+                  }
+                ],
+                "description": "Замедляет всех врагов в зоне действия"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ton_staff",
+        "name": "Посох TON",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 7,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила Тонкоина",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Джем пул",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "liquidity_drain",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Высасывает ману врага"
+                  }
+                ],
+                "description": "Забирает ману у противника"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "marketplace_staff",
+        "name": "Посох Маркетплейса",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 7,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Торговая площадка",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Листинг",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "value_reveal",
+                    "duration": 2,
+                    "description": "Показывает истинную ценность цели"
+                  }
+                ],
+                "description": "Выявляет слабости и ценность цели"
+              },
+              {
+                "level": 3,
+                "name": "Аукцион",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "gold_steal",
+                    "value": 5,
+                    "duration": 1,
+                    "description": "Забирает золото у цели"
+                  }
+                ],
+                "description": "Атакует и забирает золото у цели"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "defi_staff",
+        "name": "Посох DeFi",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 8,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Финансовая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Ликвидность",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "mana_drain",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Забирает ману у цели"
+                  }
+                ],
+                "description": "Атакует и забирает ману"
+              },
+              {
+                "level": 3,
+                "name": "Фарминг",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "gold_generation",
+                    "value": 5,
+                    "duration": 3,
+                    "description": "Генерирует золото каждый ход"
+                  }
+                ],
+                "description": "Создает пассивный доход"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "apprentice_staff",
+        "name": "Посох Ученика",
+        "type": "staff",
+        "rarity": "common",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Магический заряд",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "magic_damage",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Наносит дополнительный магический урон"
+                  }
+                ],
+                "description": "Простая магическая атака"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "swords": [
+      {
+        "id": "iron_sword",
+        "name": "Железный меч",
+        "type": "one_handed_sword",
+        "rarity": "common",
+        "damage": 7,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Воинское мастерство",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Рассечение",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "bleed",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Вызывает кровотечение"
+                  }
+                ],
+                "description": "Наносит урон и вызывает кровотечение"
+              },
+              {
+                "level": 3,
+                "name": "Глубокая рана",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 10,
+                "effects": [
+                  {
+                    "type": "healing_reduction",
+                    "value": 50,
+                    "duration": 2,
+                    "description": "Уменьшает получаемое лечение"
+                  }
+                ],
+                "description": "Сильный удар, уменьшающий эффективность лечения"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Боевая тактика",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Боевой напор",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "move_forward",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Движение к цели"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Кратковременное усиление защиты"
+                  }
+                ],
+                "description": "Рывок к цели с ударом"
+              },
+              {
+                "level": 3,
+                "name": "Защитная стойка",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Значительно увеличивает защиту"
+                  },
+                  {
+                    "type": "counter_attack",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Позволяет контратаковать"
+                  }
+                ],
+                "description": "Защитная стойка с возможностью контратаки"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scam_blade",
+        "name": "Клинок Скамера",
+        "type": "one_handed_sword",
+        "rarity": "common",
+        "damage": 8,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Искусство обмана",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Фальшивый проект",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Запутывает противника"
+                  },
+                  {
+                    "type": "gold_steal",
+                    "value": 10,
+                    "duration": 1,
+                    "description": "Ворует золото"
+                  }
+                ],
+                "description": "Обманывает противника и крадет золото"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "binance_sword",
+        "name": "Меч Бинанса",
+        "type": "one_handed_sword",
+        "rarity": "common",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Биржевое мастерство",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Торговая пара",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "double_hit",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Наносит два удара"
+                  }
+                ],
+                "description": "Двойная атака"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dex_sword",
+        "name": "Меч Децентрализованной Биржи",
+        "type": "one_handed_sword",
+        "rarity": "common",
+        "damage": 8,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Ликвидность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Своп токенов",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 7,
+                "effects": [
+                  {
+                    "type": "effect_swap",
+                    "duration": 2,
+                    "description": "Меняет местами эффекты с целью"
+                  }
+                ],
+                "description": "Атакует и обменивается эффектами с целью"
+              },
+              {
+                "level": 3,
+                "name": "Пул ликвидности",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "team_heal",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Лечит всех союзников"
+                  }
+                ],
+                "description": "Создает целебный пул для команды"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dao_sword",
+        "name": "Меч DAO",
+        "type": "one_handed_sword",
+        "rarity": "common",
+        "damage": 9,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила сообщества",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Голосование",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 7,
+                "effects": [
+                  {
+                    "type": "team_buff",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Усиливает всю команду"
+                  }
+                ],
+                "description": "Атакует и усиливает союзников"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wands": [
+      {
+        "id": "copper_wand",
+        "name": "Медная палочка",
+        "type": "wand",
+        "rarity": "common",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Электричество",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Электрический разряд",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 7,
+                "effects": [
+                  {
+                    "type": "stun",
+                    "duration": 1,
+                    "description": "Оглушает цель"
+                  }
+                ],
+                "description": "Шанс оглушить цель на 1 ход"
+              },
+              {
+                "level": 3,
+                "name": "Цепная молния",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "chain_lightning",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Перескакивает на ближайшие цели"
+                  },
+                  {
+                    "type": "slow",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Замедляет пораженные цели"
+                  }
+                ],
+                "description": "Молния, перескакивающая между целями"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Энергетический контроль",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Энергетический щит",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "energy_shield",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Поглощает урон"
+                  }
+                ],
+                "description": "Создает щит, поглощающий урон"
+              },
+              {
+                "level": 3,
+                "name": "Перегрузка",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 10,
+                "effects": [
+                  {
+                    "type": "self_stun",
+                    "duration": 1,
+                    "description": "Оглушает владельца"
+                  }
+                ],
+                "description": "Мощная атака, но оглушает владельца"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "shitcoin_wand",
+        "name": "Жезл Шиткоинов",
+        "type": "wand",
+        "rarity": "common",
+        "damage": 5,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мусорные токены",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Помпа и Дамп",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "random_damage",
+                    "value": [1, 15],
+                    "duration": 1,
+                    "description": "Случайный урон"
+                  }
+                ],
+                "description": "Наносит случайный урон от 1 до 15"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "nft_wand",
+        "name": "Жезл NFT-художника",
+        "type": "wand",
+        "rarity": "common",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Цифровое искусство",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Минт токена",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "clone",
+                    "duration": 2,
+                    "description": "Создает копию союзника"
+                  }
+                ],
+                "description": "Создает временную копию союзника"
+              },
+              {
+                "level": 3,
+                "name": "Редкий трейт",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "random_buff",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Случайное усиление"
+                  }
+                ],
+                "description": "Дает случайное мощное усиление"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "governance_wand",
+        "name": "Жезл Управления",
+        "type": "wand",
+        "rarity": "common",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Протокольная магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Предложение",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "debuff",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Ослабляет цель"
+                  }
+                ],
+                "description": "Ослабляет цель атакой"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "shields": [
+      {
+        "id": "iron_shield",
+        "name": "Железный щит",
+        "type": "shield",
+        "rarity": "common",
+        "defense": 4,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Защитная стойка",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Блок",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "block",
+                    "value": 5,
+                    "duration": 1,
+                    "description": "Блокирует следующую атаку"
+                  }
+                ],
+                "description": "Блокирует следующую атаку"
+              },
+              {
+                "level": 3,
+                "name": "Железная стена",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 4,
+                    "duration": 2,
+                    "description": "Значительно увеличивает защиту"
+                  },
+                  {
+                    "type": "immovable",
+                    "duration": 2,
+                    "description": "Нельзя сдвинуть с места"
+                  }
+                ],
+                "description": "Сильная защита, но нельзя двигаться"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Наступательная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Удар щитом",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "effects": [
+                  {
+                    "type": "knockback",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Отталкивает цель"
+                  }
+                ],
+                "description": "Атака щитом с отталкиванием"
+              },
+              {
+                "level": 3,
+                "name": "Сокрушительный блок",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "stun",
+                    "duration": 1,
+                    "description": "Оглушает цель"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Кратковременное усиление защиты"
+                  }
+                ],
+                "description": "Атакует и защищается одновременно"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "staking_shield",
+        "name": "Щит Стейкера",
+        "type": "shield",
+        "rarity": "common",
+        "defense": 5,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Стейкинг",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пассивный доход",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "hp_regen",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Восстанавливает 1 HP каждый ход"
+                  }
+                ],
+                "description": "Медленно восстанавливает здоровье"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "wooden_shield",
+        "name": "Деревянный щит",
+        "type": "shield",
+        "rarity": "common",
+        "defense": 4,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Блок",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Увеличивает защиту на короткое время"
+                  }
+                ],
+                "description": "Простое усиление защиты"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "armor": {
+    "helmets": [
+      {
+        "id": "iron_helmet",
+        "name": "Железный шлем",
+        "type": "helmet",
+        "rarity": "common",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Стальная воля",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Концентрация",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Повышает защиту"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Боевая готовность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Бдительность",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "initiative_up",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Увеличивает инициативу"
+                  }
+                ],
+                "description": "Повышает шанс действовать первым"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "mining_helmet",
+        "name": "Шлем Майнера",
+        "type": "helmet",
+        "rarity": "common",
+        "defense": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Защита от перегрева",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Термоконтроль",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "heat_resistance",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Сопротивление огню"
+                  }
+                ],
+                "description": "Защищает от огненных атак"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "trader_helmet",
+        "name": "Шлем Трейдера DEX",
+        "type": "helmet",
+        "rarity": "common",
+        "defense": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Рыночное зрение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Анализ графиков",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "crit_chance",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Увеличивает шанс критического удара"
+                  }
+                ],
+                "description": "Помогает находить слабые места противника"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "validator_helm",
+        "name": "Шлем Валидатора",
+        "type": "helmet",
+        "rarity": "common",
+        "defense": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Валидация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Проверка блоков",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "block_chance",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Шанс заблокировать атаку"
+                  }
+                ],
+                "description": "Даёт шанс блокировать атаки"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "leather_helm",
+        "name": "Кожаный шлем",
+        "type": "helmet",
+        "rarity": "common",
+        "defense": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Прочность",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "durability",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Немного увеличивает общую защиту"
+                  }
+                ],
+                "description": "Обеспечивает базовую защиту"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "body_armor": [
+      {
+        "id": "chainmail",
+        "name": "Кольчуга",
+        "type": "body_armor",
+        "rarity": "common",
+        "defense": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Гибкая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Подвижность",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "dodge_chance",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Шанс уклониться от атаки"
+                  }
+                ],
+                "description": "Шанс уклониться от атаки"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Кольчужная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Распределение урона",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_reduction",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Снижает получаемый урон"
+                  }
+                ],
+                "description": "Снижает получаемый урон"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "exchange_armor",
+        "name": "Броня Биржевика",
+        "type": "body_armor",
+        "rarity": "common",
+        "defense": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Биржевая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Стоп-лосс",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_cap",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Ограничивает получаемый урон"
+                  }
+                ],
+                "description": "Ограничивает максимальный получаемый урон"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "marketplace_armor",
+        "name": "Броня NFT-коллекционера",
+        "type": "body_armor",
+        "rarity": "common",
+        "defense": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Коллекция",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Редкий предмет",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "unique_defense",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Уникальная защита от определенного типа урона"
+                  }
+                ],
+                "description": "Случайная защита от одного типа урона"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "community_armor",
+        "name": "Броня Комьюнити",
+        "type": "body_armor",
+        "rarity": "common",
+        "defense": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила сообщества",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Взаимопомощь",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "shared_defense",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Делится защитой с союзниками"
+                  }
+                ],
+                "description": "Усиливает защиту ближайших союзников"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "padded_armor",
+        "name": "Стеганая броня",
+        "type": "body_armor",
+        "rarity": "common",
+        "defense": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Амортизация",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_reduction",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Немного снижает получаемый урон"
+                  }
+                ],
+                "description": "Обеспечивает базовую защиту от урона"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "boots": [
+      {
+        "id": "trader_boots",
+        "name": "Ботинки Трейдера",
+        "type": "boots",
+        "rarity": "common",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Скальперские движения",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрый вход",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "move_speed_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Увеличивает скорость"
+                  }
+                ],
+                "description": "Временно увеличивает скорость передвижения"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dex_boots",
+        "name": "Ботинки Арбитражника",
+        "type": "boots",
+        "rarity": "common",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Межбиржевая торговля",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрый перевод",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "teleport",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Телепортация на небольшое расстояние"
+                  }
+                ],
+                "description": "Позволяет быстро перемещаться между позициями"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "leather_boots",
+        "name": "Кожаные ботинки",
+        "type": "boots",
+        "rarity": "common",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Торговые связи",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Комиссия площадки",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "gold_find",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Шанс получить дополнительное золото"
+                  }
+                ],
+                "description": "Увеличивает количество получаемого золота"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "amulets": [
+      {
+        "id": "hash_amulet",
+        "name": "Амулет Хеширования",
+        "type": "amulet",
+        "rarity": "common",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая криптография",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хеш-защита",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает защиту на 1"
+                  }
+                ],
+                "description": "Постоянно усиливает защиту владельца"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "node_amulet",
+        "name": "Амулет Ноды",
+        "type": "amulet",
+        "rarity": "common",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сетевое взаимодействие",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Сетевой бонус",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "ap_regen",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Восстанавливает 1 AP каждые 3 хода"
+                  }
+                ],
+                "description": "Медленно восстанавливает AP"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "mining_amulet",
+        "name": "Амулет Майнера",
+        "type": "amulet",
+        "rarity": "common",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Добыча ресурсов",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Майнинг",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "gold_find",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Увеличивает количество получаемого золота на 10%"
+                  }
+                ],
+                "description": "Увеличивает добычу золота"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "blockchain_amulet",
+        "name": "Амулет Блокчейна",
+        "type": "amulet",
+        "rarity": "common",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Цепочка блоков",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Связь блоков",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "chain_bonus",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает эффективность следующих способностей"
+                  }
+                ],
+                "description": "Усиливает следующие способности"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 

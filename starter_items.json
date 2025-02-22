@@ -1,0 +1,1580 @@
+{
+  "weapons": {
+    "staves": [
+      {
+        "id": "apprentice_staff",
+        "name": "Посох ученика",
+        "type": "staff",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Магическая концентрация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Магический удар",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "effects": [],
+                "description": "Простой магический удар по одной цели"
+              },
+              {
+                "level": 2,
+                "name": "Искра маны",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "magic_spark",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Дополнительный магический урон"
+                  }
+                ],
+                "description": "Наносит урон и оставляет искру маны"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Основы стихий",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Ледяное касание",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "slow",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Замедляет цель"
+                  }
+                ],
+                "description": "Слабая атака с замедлением"
+              },
+              {
+                "level": 2,
+                "name": "Искра огня",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "burn",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Поджигает цель"
+                  }
+                ],
+                "description": "Поджигает цель, нанося урон со временем"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Защитная магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Магический барьер",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Создает защитный барьер"
+              },
+              {
+                "level": 2,
+                "name": "Отражение",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "reflect",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Отражает часть полученного урона"
+                  }
+                ],
+                "description": "Отражает часть получаемого урона"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "crypto_staff",
+        "name": "Посох Криптографа",
+        "type": "staff",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы криптографии",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хеш-атака",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "confusion",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Слегка запутывает цель"
+                  }
+                ],
+                "description": "Простая атака с шансом запутать цель"
+              },
+              {
+                "level": 2,
+                "name": "Шифрование",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Создает защитный барьер"
+                  }
+                ],
+                "description": "Создает простой защитный барьер"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "smart_contract_staff",
+        "name": "Посох Смарт-контракта для начинающих",
+        "type": "staff",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы программирования",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Hello World",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "effects": [
+                  {
+                    "type": "debug",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Выявляет слабости цели"
+                  }
+                ],
+                "description": "Простая атака с анализом цели"
+              },
+              {
+                "level": 2,
+                "name": "Компиляция",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "self_buff",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Усиливает следующую атаку"
+                  }
+                ],
+                "description": "Подготавливает усиленную атаку"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "testnet_staff",
+        "name": "Посох Тестнета",
+        "type": "staff",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Тестирование",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пробная транзакция",
+                "type": "active",
+                "ap_cost": 1,
+                "damage": 2,
+                "effects": [
+                  {
+                    "type": "safe_test",
+                    "duration": 1,
+                    "description": "Безопасная проверка атаки"
+                  }
+                ],
+                "description": "Тестирует атаку без риска"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "swords": [
+      {
+        "id": "training_sword",
+        "name": "Тренировочный меч",
+        "type": "one_handed_sword",
+        "rarity": "starter",
+        "damage": 5,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы фехтования",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрый удар",
+                "type": "active",
+                "ap_cost": 1,
+                "damage": 3,
+                "effects": [],
+                "description": "Быстрый удар с малым уроном, но низкой стоимостью AP"
+              },
+              {
+                "level": 2,
+                "name": "Боевая стойка",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Увеличивает защиту на несколько ходов"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Атакующие приемы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Мощный удар",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 7,
+                "effects": [
+                  {
+                    "type": "self_slow",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Замедляет владельца"
+                  }
+                ],
+                "description": "Сильный удар, но замедляет владельца"
+              },
+              {
+                "level": 2,
+                "name": "Серия ударов",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "multi_hit",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Наносит 3 быстрых удара"
+                  }
+                ],
+                "description": "Наносит несколько быстрых ударов"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Тактические приемы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Отступление",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "move_back",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Отступает на 1 клетку"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Временно увеличивает защиту"
+                  }
+                ],
+                "description": "Отступает и увеличивает защиту"
+              },
+              {
+                "level": 2,
+                "name": "Боевой клич",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "damage_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает урон"
+                  }
+                ],
+                "description": "Усиливает атаки на несколько ходов"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "miner_sword",
+        "name": "Меч Майнера",
+        "type": "one_handed_sword",
+        "rarity": "starter",
+        "damage": 6,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Майнинг",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Добыча",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "effects": [
+                  {
+                    "type": "gold_find",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Находит немного золота"
+                  }
+                ],
+                "description": "Атака с шансом найти золото"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "trader_sword",
+        "name": "Меч Трейдера-новичка",
+        "type": "one_handed_sword",
+        "rarity": "starter",
+        "damage": 5,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Торговые приемы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Первая сделка",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "effects": [
+                  {
+                    "type": "value_check",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Проверяет ценность цели"
+                  }
+                ],
+                "description": "Атака с анализом ценности"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "faucet_blade",
+        "name": "Клинок Фаусета",
+        "type": "one_handed_sword",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Получение ресурсов",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Тестовые токены",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "resource_gain",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Получает небольшой бонус"
+                  }
+                ],
+                "description": "Атака с получением бонуса"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wands": [
+      {
+        "id": "novice_wand",
+        "name": "Волшебная палочка новичка",
+        "type": "wand",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Магическая стрела",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 4,
+                "range": 3,
+                "effects": [],
+                "description": "Запускает магическую стрелу в цель"
+              },
+              {
+                "level": 2,
+                "name": "Малое лечение",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "heal",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Восстанавливает здоровье"
+                  }
+                ],
+                "description": "Восстанавливает небольшое количество здоровья"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Контроль",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Замедление",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 2,
+                "effects": [
+                  {
+                    "type": "slow",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Замедляет цель"
+                  }
+                ],
+                "description": "Слабая атака, замедляющая цель"
+              },
+              {
+                "level": 2,
+                "name": "Толчок",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "knockback",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Отталкивает цель"
+                  }
+                ],
+                "description": "Отталкивает цель на 2 клетки"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Поддержка",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Защитная аура",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": 3,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Создает защитную ауру"
+              },
+              {
+                "level": 2,
+                "name": "Энергетический импульс",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "ap_restore",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Восстанавливает 1 AP"
+                  }
+                ],
+                "description": "Восстанавливает AP цели"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "wallet_wand",
+        "name": "Палочка Кошелька",
+        "type": "wand",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Управление активами",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Перевод токенов",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "mana_transfer",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Передает ману союзнику"
+                  }
+                ],
+                "description": "Атакует врага и передает ману союзнику"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "verification_wand",
+        "name": "Жезл Верификации",
+        "type": "wand",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Проверка подлинности",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Верификация",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "reveal",
+                    "duration": 2,
+                    "description": "Раскрывает истинную форму цели"
+                  }
+                ],
+                "description": "Проверяет и раскрывает цель"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "staker_wand",
+        "name": "Палочка Стейкера",
+        "type": "wand",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Стейкинг",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Накопление силы",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "power_stack",
+                    "value": 1,
+                    "duration": 3,
+                    "description": "Накапливает силу"
+                  }
+                ],
+                "description": "Накапливает силу для будущих атак"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "daggers": [
+      {
+        "id": "training_dagger",
+        "name": "Тренировочный кинжал",
+        "type": "dagger",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 1,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы скрытности",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Внезапный удар",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "surprise_attack",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Дополнительный урон при атаке со спины"
+                  }
+                ],
+                "description": "Наносит дополнительный урон при атаке со спины"
+              },
+              {
+                "level": 2,
+                "name": "Теневой шаг",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "stealth",
+                    "duration": 1,
+                    "description": "Временная невидимость"
+                  }
+                ],
+                "description": "Делает владельца невидимым на 1 ход"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "crypto_dagger",
+        "name": "Кинжал Криптографа",
+        "type": "dagger",
+        "rarity": "starter",
+        "damage": 3,
+        "ap_cost": 1,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Шифрование",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Зашифрованный удар",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 5,
+                "effects": [
+                  {
+                    "type": "confusion",
+                    "duration": 1,
+                    "description": "Запутывает цель"
+                  }
+                ],
+                "description": "Атака, вызывающая замешательство"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "bows": [
+      {
+        "id": "training_bow",
+        "name": "Тренировочный лук",
+        "type": "bow",
+        "rarity": "starter",
+        "damage": 5,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы стрельбы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Прицельный выстрел",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 7,
+                "effects": [
+                  {
+                    "type": "accuracy_up",
+                    "value": 20,
+                    "duration": 1,
+                    "description": "Повышает точность"
+                  }
+                ],
+                "description": "Точный выстрел с увеличенным уроном"
+              },
+              {
+                "level": 2,
+                "name": "Быстрый выстрел",
+                "type": "active",
+                "ap_cost": 1,
+                "damage": 4,
+                "effects": [],
+                "description": "Быстрый выстрел с малым уроном"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "node_bow",
+        "name": "Лук Узла",
+        "type": "bow",
+        "rarity": "starter",
+        "damage": 4,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сетевая стрельба",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пинг",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 3,
+                "effects": [
+                  {
+                    "type": "reveal",
+                    "duration": 2,
+                    "description": "Обнаруживает скрытые цели"
+                  }
+                ],
+                "description": "Обнаруживает скрытых врагов"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "two_handed_swords": [
+      {
+        "id": "training_greatsword",
+        "name": "Тренировочный двуручный меч",
+        "type": "two_handed_sword",
+        "rarity": "starter",
+        "damage": 7,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Тяжелое оружие",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Размах",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 9,
+                "effects": [
+                  {
+                    "type": "knockback",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Отталкивает цель"
+                  }
+                ],
+                "description": "Мощный удар с отталкиванием"
+              },
+              {
+                "level": 2,
+                "name": "Оборонительная стойка",
+                "type": "active",
+                "ap_cost": 2,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Защитная стойка с двуручным мечом"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "validator_greatsword",
+        "name": "Двуручный меч Валидатора",
+        "type": "two_handed_sword",
+        "rarity": "starter",
+        "damage": 6,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Валидация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Проверка блоков",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "defense_break",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Пробивает защиту"
+                  }
+                ],
+                "description": "Пробивающий удар"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "shields": [
+      {
+        "id": "training_shield",
+        "name": "Тренировочный щит",
+        "type": "shield",
+        "rarity": "starter",
+        "defense": 4,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Основы защиты",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Блок",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "block_chance",
+                    "value": 50,
+                    "duration": 1,
+                    "description": "Шанс заблокировать следующую атаку"
+                  }
+                ],
+                "description": "Увеличивает шанс блокирования следующей атаки"
+              },
+              {
+                "level": 2,
+                "name": "Защитная стойка",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "counter_attack",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Небольшой шанс контратаки"
+                  }
+                ],
+                "description": "Усиливает защиту и даёт шанс контратаки"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "hash_shield",
+        "name": "Щит Хеширования",
+        "type": "shield",
+        "rarity": "starter",
+        "defense": 3,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Криптографическая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хеш-защита",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "random_defense",
+                    "value": [2, 4, 6],
+                    "duration": 2,
+                    "description": "Случайное значение защиты"
+                  }
+                ],
+                "description": "Создает случайный защитный барьер"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "node_shield",
+        "name": "Щит Узла",
+        "type": "shield",
+        "rarity": "starter",
+        "defense": 3,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сетевая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Распределенная защита",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "team_defense",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Увеличивает защиту всей команды"
+                  }
+                ],
+                "description": "Распределяет защитный бонус между членами команды"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "armor": {
+    "helmets": [
+      {
+        "id": "leather_cap",
+        "name": "Кожаный шлем",
+        "type": "helmet",
+        "rarity": "starter",
+        "defense": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Базовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Крепкая голова",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "stun_resistance",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Шанс сопротивляться оглушению"
+                  }
+                ],
+                "description": "Небольшой шанс сопротивляться оглушению"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Концентрация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Ясный ум",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "ap_regen",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Восстанавливает 1 AP каждые 3 хода"
+                  }
+                ],
+                "description": "Медленно восстанавливает AP"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "node_cap",
+        "name": "Шапка Узла",
+        "type": "helmet",
+        "rarity": "starter",
+        "defense": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сетевая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Валидация",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "block_chance",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Небольшой шанс блокировать атаку"
+                  }
+                ],
+                "description": "Даёт небольшой шанс заблокировать атаку"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "tester_helm",
+        "name": "Шлем Тестировщика",
+        "type": "helmet",
+        "rarity": "starter",
+        "defense": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Отладка",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Поиск багов",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "bug_resistance",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Сопротивление критическим ошибкам"
+                  }
+                ],
+                "description": "Защищает от критических ошибок"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "hodler_cap",
+        "name": "Шапка Ходлера",
+        "type": "helmet",
+        "rarity": "starter",
+        "defense": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Стойкость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Крепкие нервы",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "panic_resistance",
+                    "value": 15,
+                    "duration": "permanent",
+                    "description": "Сопротивление панике"
+                  }
+                ],
+                "description": "Уменьшает эффект паники"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "body_armor": [
+      {
+        "id": "cloth_robe",
+        "name": "Тканевая роба",
+        "type": "body_armor",
+        "rarity": "starter",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Магическая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Магический барьер",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Слабая защита от урона"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Подвижность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Легкость",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "move_speed_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает скорость передвижения"
+                  }
+                ],
+                "description": "Увеличивает скорость передвижения"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "miner_vest",
+        "name": "Жилет Майнера",
+        "type": "body_armor",
+        "rarity": "starter",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Защита от перегрева",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Охлаждение",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "heat_resistance",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Сопротивление огню"
+                  }
+                ],
+                "description": "Небольшое сопротивление огненному урону"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "validator_vest",
+        "name": "Жилет Валидатора",
+        "type": "body_armor",
+        "rarity": "starter",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Валидация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Проверка блоков",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "validation_bonus",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Бонус к проверке"
+                  }
+                ],
+                "description": "Улучшает способности проверки"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "community_robe",
+        "name": "Роба Комьюнити-менеджера",
+        "type": "body_armor",
+        "rarity": "starter",
+        "defense": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Социальные связи",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Поддержка сообщества",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "team_bonus",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Бонус к командной работе"
+                  }
+                ],
+                "description": "Улучшает командное взаимодействие"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "boots": [
+      {
+        "id": "leather_boots",
+        "name": "Кожаные ботинки",
+        "type": "boots",
+        "rarity": "starter",
+        "defense": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Подвижность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Легкий шаг",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "move_speed_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает скорость передвижения"
+                  }
+                ],
+                "description": "Увеличивает скорость передвижения"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Ловкость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Тихая поступь",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "stealth_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Уменьшает радиус обнаружения"
+                  }
+                ],
+                "description": "Уменьшает шанс быть замеченным"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "blockchain_shoes",
+        "name": "Ботинки Блокчейна",
+        "type": "boots",
+        "rarity": "starter",
+        "defense": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сетевая скорость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрая транзакция",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "initiative_up",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Немного увеличивает инициативу"
+                  }
+                ],
+                "description": "Небольшое увеличение инициативы"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "staker_sandals",
+        "name": "Сандалии Стейкера",
+        "type": "boots",
+        "rarity": "starter",
+        "defense": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Терпение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Долгосрочный взгляд",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "patience_bonus",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Бонус к длительным эффектам"
+                  }
+                ],
+                "description": "Усиливает длительные эффекты"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bounty_boots",
+        "name": "Ботинки Баунти-хантера",
+        "type": "boots",
+        "rarity": "starter",
+        "defense": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Поиск наград",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Охота за наградой",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "reward_find",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Шанс найти дополнительную награду"
+                  }
+                ],
+                "description": "Увеличивает шанс найти награду"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "amulets": [
+      {
+        "id": "wooden_amulet",
+        "name": "Деревянный амулет",
+        "type": "amulet",
+        "rarity": "starter",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Природная энергия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Регенерация",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "hp_regen",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Восстанавливает 1 HP каждый ход"
+                  }
+                ],
+                "description": "Восстанавливает HP каждый ход"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Жизненная сила",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Живучесть",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "max_hp_up",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Увеличивает максимальное HP"
+                  }
+                ],
+                "description": "Увеличивает максимальное здоровье"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "seed_amulet",
+        "name": "Амулет Сид-фразы",
+        "type": "amulet",
+        "rarity": "starter",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Восстановление",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Backup",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "revive",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Шанс восстановить 10 HP при смерти"
+                  }
+                ],
+                "description": "Малый шанс восстановиться после смертельного удара"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "private_key_amulet",
+        "name": "Амулет Приватного ключа",
+        "type": "amulet",
+        "rarity": "starter",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Безопасность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Защита ключа",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "theft_resistance",
+                    "value": 15,
+                    "duration": "permanent",
+                    "description": "Сопротивление кражам"
+                  }
+                ],
+                "description": "Защищает от краж"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "community_amulet",
+        "name": "Амулет Комьюнити",
+        "type": "amulet",
+        "rarity": "starter",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Командный дух",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Сила сообщества",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "team_synergy",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Усиливает командные бонусы"
+                  }
+                ],
+                "description": "Улучшает командное взаимодействие"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 

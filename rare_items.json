@@ -1,0 +1,1392 @@
+{
+  "weapons": {
+    "staves": [
+      {
+        "id": "blockchain_staff",
+        "name": "Посох Блокчейна",
+        "type": "staff",
+        "rarity": "rare",
+        "damage": 7,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Криптомагия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Майнинг-удар",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 8,
+                "area": "circle",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "defense_down",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Снижает защиту целей"
+                  }
+                ],
+                "description": "АоЕ атака, снижает защиту целей на 2 хода"
+              },
+              {
+                "level": 3,
+                "name": "Proof of Work",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 15,
+                "effects": [
+                  {
+                    "type": "stun",
+                    "duration": 2,
+                    "description": "Оглушает цель"
+                  }
+                ],
+                "description": "Сильная атака с шансом оглушения на 2 хода"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Блокчейн-протоколы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хеширование",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Запутывает цель"
+                  },
+                  {
+                    "type": "defense_down",
+                    "value": 1,
+                    "duration": 2,
+                    "description": "Снижает защиту"
+                  }
+                ],
+                "description": "Запутывает цель и снижает защиту"
+              },
+              {
+                "level": 3,
+                "name": "Форк-атака",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 12,
+                "effects": [
+                  {
+                    "type": "split_damage",
+                    "value": 6,
+                    "duration": 2,
+                    "description": "Разделяет урон на соседние клетки"
+                  }
+                ],
+                "description": "Атака с разделением урона на соседние клетки"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Криптозащита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Приватный ключ",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 4,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "immunity",
+                    "duration": 1,
+                    "description": "Иммунитет к следующей атаке"
+                  }
+                ],
+                "description": "Временная неуязвимость и усиление защиты"
+              },
+              {
+                "level": 3,
+                "name": "Децентрализация",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "damage_share",
+                    "duration": 3,
+                    "description": "Распределяет получаемый урон между союзниками"
+                  }
+                ],
+                "description": "Распределяет получаемый урон между союзниками"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "gram_staff",
+        "name": "Посох Gram",
+        "type": "staff",
+        "rarity": "rare",
+        "damage": 9,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила TON",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Jetton атака",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 11,
+                "effects": [
+                  {
+                    "type": "token_burn",
+                    "value": 10,
+                    "duration": 2,
+                    "description": "Сжигает токены противника"
+                  }
+                ],
+                "description": "Сжигает токены, нанося урон"
+              },
+              {
+                "level": 3,
+                "name": "Смарт-контракт",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "auto_execute",
+                    "duration": 3,
+                    "description": "Автоматически контратакует"
+                  }
+                ],
+                "description": "Создает автоматическую защиту"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "optimism_staff",
+        "name": "Посох Оптимизма",
+        "type": "staff",
+        "rarity": "rare",
+        "damage": 10,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Оптимистичные роллапы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пакетная обработка",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 9,
+                "area": "line",
+                "effects": [
+                  {
+                    "type": "batch_damage",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Накапливает урон для следующей атаки"
+                  }
+                ],
+                "description": "Собирает урон в пакет для мощной атаки"
+              },
+              {
+                "level": 3,
+                "name": "Ускоренное подтверждение",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": "stored_damage",
+                "effects": [
+                  {
+                    "type": "instant_cast",
+                    "duration": 1,
+                    "description": "Мгновенно применяет накопленный урон"
+                  }
+                ],
+                "description": "Мгновенно высвобождает накопленный урон"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "mage_staff",
+        "name": "Посох Мага",
+        "type": "staff",
+        "rarity": "rare",
+        "damage": 8,
+        "ap_cost": 2,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Продвинутая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Цепная молния",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 9,
+                "effects": [
+                  {
+                    "type": "chain_damage",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Урон переходит на соседние цели"
+                  }
+                ],
+                "description": "Атака с переходом на соседние цели"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "swords": [
+      {
+        "id": "nft_sword",
+        "name": "NFT Меч",
+        "type": "one_handed_sword",
+        "rarity": "rare",
+        "damage": 9,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Токеномика",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Mint Attack",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 11,
+                "effects": [
+                  {
+                    "type": "value_increase",
+                    "value": 1,
+                    "duration": 3,
+                    "description": "Увеличивает урон на 1"
+                  }
+                ],
+                "description": "Каждая успешная атака увеличивает урон на 1"
+              },
+              {
+                "level": 3,
+                "name": "Pump and Dump",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 18,
+                "effects": [
+                  {
+                    "type": "defense_down",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Снижает защиту цели"
+                  },
+                  {
+                    "type": "self_damage",
+                    "value": 4,
+                    "duration": 1,
+                    "description": "Наносит урон себе"
+                  }
+                ],
+                "description": "Мощная атака, снижающая защиту цели, но наносящая урон владельцу"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Крипто-трейдинг",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Buy The Dip",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "damage_stack",
+                    "value": 2,
+                    "duration": "until_hit",
+                    "description": "Накапливает бонусный урон пока не нанесёт удар"
+                  }
+                ],
+                "description": "Накапливает силу, следующий удар будет мощнее"
+              },
+              {
+                "level": 3,
+                "name": "Diamond Hands",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 16,
+                "effects": [
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  },
+                  {
+                    "type": "damage_up",
+                    "value": 4,
+                    "duration": 2,
+                    "description": "Увеличивает урон"
+                  }
+                ],
+                "description": "Усиливает атаку и защиту на несколько ходов"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "NFT-коллекция",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Rare Mint",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 10,
+                "effects": [
+                  {
+                    "type": "copy_target_effect",
+                    "duration": 2,
+                    "description": "Копирует один положительный эффект с цели"
+                  }
+                ],
+                "description": "Копирует один положительный эффект с цели"
+              },
+              {
+                "level": 3,
+                "name": "Floor Price Crash",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 15,
+                "area": "circle",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "remove_effects",
+                    "duration": 1,
+                    "description": "Удаляет все положительные эффекты с целей"
+                  },
+                  {
+                    "type": "stun",
+                    "duration": 1,
+                    "description": "Оглушает цели"
+                  }
+                ],
+                "description": "Наносит урон по области, удаляет баффы и оглушает"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "whale_sword",
+        "name": "Меч Кита",
+        "type": "two_handed_sword",
+        "rarity": "rare",
+        "damage": 13,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Манипуляции рынком",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Массовая продажа",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 15,
+                "area": "circle",
+                "effects": [
+                  {
+                    "type": "price_crash",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Снижает защиту всех целей"
+                  }
+                ],
+                "description": "Обрушивает защиту противников"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "arbitrum_sword",
+        "name": "Меч Арбитрума",
+        "type": "two_handed_sword",
+        "rarity": "rare",
+        "damage": 16,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Арбитражная сила",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Нитро удар",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "speed_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Ускоряет следующие атаки"
+                  }
+                ],
+                "description": "Мощная атака с ускорением"
+              },
+              {
+                "level": 3,
+                "name": "Валидаторский разрыв",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "defense_break",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Пробивает защиту цели"
+                  }
+                ],
+                "description": "Пробивает защиту противника"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wands": [
+      {
+        "id": "smart_contract_wand",
+        "name": "Жезл Смарт-контракта",
+        "type": "wand",
+        "rarity": "rare",
+        "damage": 10,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Программируемая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Execute Contract",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 12,
+                "effects": [
+                  {
+                    "type": "chain_reaction",
+                    "duration": 2,
+                    "description": "Атака переходит на ближайшую цель при убийстве"
+                  }
+                ],
+                "description": "Атака переходит на ближайшую цель при убийстве"
+              },
+              {
+                "level": 3,
+                "name": "Gas Optimization",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 8,
+                "effects": [
+                  {
+                    "type": "ap_restore",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Восстанавливает AP при убийстве"
+                  }
+                ],
+                "description": "Восстанавливает AP при убийстве цели"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Условные операторы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "If-Then Statement",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 6,
+                "effects": [
+                  {
+                    "type": "conditional_damage",
+                    "value": 6,
+                    "duration": 1,
+                    "description": "Двойной урон по целям с полным HP"
+                  }
+                ],
+                "description": "Двойной урон по целям с полным здоровьем"
+              },
+              {
+                "level": 3,
+                "name": "Try-Catch Block",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "damage_redirect",
+                    "duration": 2,
+                    "description": "Перенаправляет следующую атаку на случайного врага"
+                  }
+                ],
+                "description": "Перенаправляет следующую атаку на случайного врага"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Безопасность контракта",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Security Audit",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "reveal_weakness",
+                    "duration": 2,
+                    "description": "Показывает слабости противников"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Выявляет слабости врагов и усиливает защиту"
+              },
+              {
+                "level": 3,
+                "name": "Rollback",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "heal",
+                    "value": 10,
+                    "duration": 1,
+                    "description": "Восстанавливает HP"
+                  },
+                  {
+                    "type": "remove_debuffs",
+                    "duration": 1,
+                    "description": "Удаляет все негативные эффекты"
+                  }
+                ],
+                "description": "Восстанавливает здоровье и удаляет дебаффы"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "fud_wand",
+        "name": "Жезл FUD",
+        "type": "wand",
+        "rarity": "rare",
+        "damage": 14,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила страха",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Паника на рынке",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 10,
+                "area": "circle",
+                "effects": [
+                  {
+                    "type": "fear",
+                    "duration": 2,
+                    "description": "Заставляет врагов убегать"
+                  }
+                ],
+                "description": "Вызывает панику среди врагов"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "polygon_wand",
+        "name": "Жезл Полигона",
+        "type": "wand",
+        "rarity": "rare",
+        "damage": 13,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Масштабируемая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Матик бросок",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 15,
+                "effects": [
+                  {
+                    "type": "multi_cast",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Применяет заклинание несколько раз"
+                  }
+                ],
+                "description": "Запускает несколько копий заклинания"
+              },
+              {
+                "level": 3,
+                "name": "Сеть шардов",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 18,
+                "area": "circle",
+                "effects": [
+                  {
+                    "type": "damage_share",
+                    "duration": 2,
+                    "description": "Распределяет урон между целями"
+                  }
+                ],
+                "description": "Распределяет урон между всеми целями"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bridge_wand",
+        "name": "Жезл Моста",
+        "type": "wand",
+        "rarity": "rare",
+        "damage": 17,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Кросс-чейн магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Перенос токенов",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "effect_transfer",
+                    "duration": 2,
+                    "description": "Переносит эффекты между целями"
+                  }
+                ],
+                "description": "Переносит эффекты с одной цели на другую"
+              },
+              {
+                "level": 3,
+                "name": "Межсетевой портал",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "team_teleport",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Телепортирует всю команду"
+                  },
+                  {
+                    "type": "shield_transfer",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Переносит часть защиты"
+                  }
+                ],
+                "description": "Создает портал для команды с переносом защиты"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "zk_wand",
+        "name": "Жезл Zero Knowledge",
+        "type": "wand",
+        "rarity": "rare",
+        "damage": 16,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Доказательства с нулевым разглашением",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Скрытая атака",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 18,
+                "effects": [
+                  {
+                    "type": "stealth_strike",
+                    "duration": 1,
+                    "description": "Невидимая атака, игнорирующая защиту"
+                  }
+                ],
+                "description": "Атакует, не раскрывая себя"
+              },
+              {
+                "level": 3,
+                "name": "Доказательство истины",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "reveal_weakness",
+                    "duration": 2,
+                    "description": "Раскрывает слабости врага"
+                  },
+                  {
+                    "type": "true_damage",
+                    "value": 15,
+                    "duration": 1,
+                    "description": "Наносит чистый урон"
+                  }
+                ],
+                "description": "Раскрывает слабости и наносит чистый урон"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "bows": [
+      {
+        "id": "defi_bow",
+        "name": "Лук DeFi",
+        "type": "bow",
+        "rarity": "rare",
+        "damage": 14,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Стрелы ликвидности",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пул ликвидности",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 16,
+                "effects": [
+                  {
+                    "type": "slow",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Замедляет цель"
+                  }
+                ],
+                "description": "Замедляющий выстрел"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "crosschain_bow",
+        "name": "Лук Кросс-чейна",
+        "type": "bow",
+        "rarity": "rare",
+        "damage": 15,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Межсетевые стрелы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Мост-выстрел",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 18,
+                "effects": [
+                  {
+                    "type": "teleport_arrow",
+                    "duration": 1,
+                    "description": "Телепортирует цель"
+                  }
+                ],
+                "description": "Телепортирующий выстрел"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "daggers": [
+      {
+        "id": "memecoin_dagger",
+        "name": "Кинжал Мемкоина",
+        "type": "dagger",
+        "rarity": "rare",
+        "damage": 10,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Вирусный удар",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хайп-атака",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 12,
+                "effects": [
+                  {
+                    "type": "viral_spread",
+                    "duration": 2,
+                    "description": "Эффекты распространяются на соседние цели"
+                  }
+                ],
+                "description": "Атака с вирусным распространением"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "privacy_dagger",
+        "name": "Кинжал Приватности",
+        "type": "dagger",
+        "rarity": "rare",
+        "damage": 11,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Скрытая атака",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Теневой удар",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 14,
+                "effects": [
+                  {
+                    "type": "stealth",
+                    "duration": 1,
+                    "description": "Скрывает атакующего"
+                  }
+                ],
+                "description": "Атака из невидимости"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "armor": {
+    "helmets": [
+      {
+        "id": "crypto_helmet",
+        "name": "Криптошлем",
+        "type": "helmet",
+        "rarity": "rare",
+        "defense": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Криптозащита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Anti-FUD",
+                "type": "passive",
+                "effect": "debuff_immunity",
+                "effect_value": 50,
+                "description": "50% шанс игнорировать дебаффы"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "toncoin_helm",
+        "name": "Шлем Тонкоина",
+        "type": "helmet",
+        "rarity": "rare",
+        "defense": 8,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Защита блокчейна",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Валидация",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "block_chance",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Шанс заблокировать атаку"
+                  }
+                ],
+                "description": "Даёт шанс полностью заблокировать атаку"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bridge_helmet",
+        "name": "Шлем Мостов",
+        "type": "helmet",
+        "rarity": "rare",
+        "defense": 10,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Кросс-чейн защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Межсетевой щит",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "transfer_damage",
+                    "value": 30,
+                    "duration": "permanent",
+                    "description": "Часть урона переносится в другую сеть"
+                  }
+                ],
+                "description": "Постоянно переносит часть урона в другую сеть"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "chain_helm",
+        "name": "Кольчужный шлем",
+        "type": "helmet",
+        "rarity": "rare",
+        "defense": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Улучшенная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Стойкость",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "resistance",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Увеличивает сопротивление урону"
+                  }
+                ],
+                "description": "Обеспечивает улучшенную защиту"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "body_armor": [
+      {
+        "id": "defi_armor",
+        "name": "DeFi Броня",
+        "type": "body_armor",
+        "rarity": "rare",
+        "defense": 10,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Децентрализованная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Yield Farming",
+                "type": "passive",
+                "effect": "hp_regen",
+                "effect_value": 3,
+                "description": "Восстанавливает 3 HP каждый ход"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "cold_wallet_armor",
+        "name": "Броня Холодного Кошелька",
+        "type": "body_armor",
+        "rarity": "rare",
+        "defense": 12,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Оффлайн защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Хранение в холоде",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "immunity",
+                    "duration": "permanent",
+                    "description": "Иммунитет к кражам"
+                  }
+                ],
+                "description": "Полная защита от воровства золота"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "rollup_armor",
+        "name": "Броня Роллапов",
+        "type": "body_armor",
+        "rarity": "rare",
+        "defense": 12,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Пакетная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Оптимистичный блок",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_batch",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Собирает урон в пакеты"
+                  },
+                  {
+                    "type": "delayed_healing",
+                    "value": 3,
+                    "duration": "permanent",
+                    "description": "Восстанавливает здоровье после подтверждения"
+                  }
+                ],
+                "description": "Собирает получаемый урон в пакеты и восстанавливает здоровье"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "zk_armor",
+        "name": "Броня Zero Knowledge",
+        "type": "body_armor",
+        "rarity": "rare",
+        "defense": 14,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Скрытая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Доказуемая защита",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "hidden_defense",
+                    "value": 5,
+                    "duration": "permanent",
+                    "description": "Скрытый бонус к защите"
+                  },
+                  {
+                    "type": "evasion",
+                    "value": 15,
+                    "duration": "permanent",
+                    "description": "Шанс уклонения от атак"
+                  }
+                ],
+                "description": "Обеспечивает скрытую защиту и уклонение"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "chain_mail",
+        "name": "Кольчуга",
+        "type": "body_armor",
+        "rarity": "rare",
+        "defense": 9,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Улучшенная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Распределение урона",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_spread",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Распределяет получаемый урон"
+                  }
+                ],
+                "description": "Распределяет получаемый урон по всей броне"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "boots": [
+      {
+        "id": "gas_boots",
+        "name": "Ботинки Gas Fee",
+        "type": "boots",
+        "rarity": "rare",
+        "defense": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Скоростные транзакции",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "High Priority",
+                "type": "active",
+                "ap_cost": 2,
+                "effect": "extra_action",
+                "effect_duration": 1,
+                "description": "Позволяет сделать дополнительное действие"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "zk_boots",
+        "name": "Ботинки Zero Knowledge",
+        "type": "boots",
+        "rarity": "rare",
+        "defense": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Скрытое перемещение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Невидимый шаг",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "stealth_move",
+                    "duration": 2,
+                    "description": "Передвижение в невидимости"
+                  },
+                  {
+                    "type": "speed_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Увеличивает скорость"
+                  }
+                ],
+                "description": "Позволяет двигаться незаметно с повышенной скоростью"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "rollup_boots",
+        "name": "Ботинки Роллапа",
+        "type": "boots",
+        "rarity": "rare",
+        "defense": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Пакетное перемещение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Групповой прыжок",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "team_jump",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Перемещает всю команду"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Временно увеличивает защиту"
+                  }
+                ],
+                "description": "Перемещает всю команду с бонусом к защите"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "chain_boots",
+        "name": "Кольчужные ботинки",
+        "type": "boots",
+        "rarity": "rare",
+        "defense": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Улучшенная подвижность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрый шаг",
+                "type": "active",
+                "ap_cost": 2,
+                "effects": [
+                  {
+                    "type": "speed_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает скорость передвижения"
+                  }
+                ],
+                "description": "Временно увеличивает скорость"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "amulets": [
+      {
+        "id": "bridge_amulet",
+        "name": "Амулет Мостов",
+        "type": "amulet",
+        "rarity": "rare",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Межсетевое взаимодействие",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Кросс-чейн синергия",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "effect_share",
+                    "duration": "permanent",
+                    "description": "Делится положительными эффектами с союзниками"
+                  },
+                  {
+                    "type": "damage_reduction",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Снижает получаемый урон"
+                  }
+                ],
+                "description": "Усиливает командное взаимодействие и защиту"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "layer2_amulet",
+        "name": "Амулет Layer 2",
+        "type": "amulet",
+        "rarity": "rare",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Масштабируемость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Оптимизация действий",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "ap_cost_reduction",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Снижает стоимость способностей"
+                  },
+                  {
+                    "type": "action_speed",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Ускоряет применение способностей"
+                  }
+                ],
+                "description": "Оптимизирует использование способностей"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 

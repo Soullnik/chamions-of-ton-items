@@ -1,0 +1,421 @@
+{
+  "sets": [
+    {
+      "id": "bitcoin_set",
+      "name": "Комплект Биткоина",
+      "rarity": "legendary",
+      "items": [
+        "bitcoin_bow",
+        "bitcoin_shield",
+        "doge_helm",
+        "blockchain_plate"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "damage_up",
+              "value": 20,
+              "description": "Увеличивает урон на 20%"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "crypto_dominance",
+              "description": "Все атаки игнорируют 50% защиты противника"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defi_set",
+      "name": "Комплект DeFi",
+      "rarity": "epic",
+      "items": [
+        "defi_bow",
+        "defi_shield",
+        "dao_crown",
+        "defi_protocol_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "yield_farming",
+              "description": "Восстанавливает 2% HP каждый ход"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "liquidity_master",
+              "description": "Все способности стоят на 30% меньше AP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy_set",
+      "name": "Комплект Приватности",
+      "rarity": "rare",
+      "items": [
+        "privacy_dagger",
+        "validator_shield",
+        "privacy_helm",
+        "consensus_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "stealth",
+              "description": "30% шанс уклониться от атаки"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "anonymous_power",
+              "description": "Критические удары наносят тройной урон"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oracle_set",
+      "name": "Комплект Оракула",
+      "rarity": "epic",
+      "items": [
+        "oracle_bow",
+        "oracle_staff",
+        "metaverse_helm",
+        "dao_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "future_sight",
+              "description": "Показывает следующее действие противника"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "market_wisdom",
+              "description": "Увеличивает урон на 50% по ослабленным целям"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance_set",
+      "name": "Комплект Управления",
+      "rarity": "epic",
+      "items": [
+        "governance_dagger",
+        "consensus_shield",
+        "dao_crown",
+        "dao_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "voting_power",
+              "description": "Усиливает эффекты командных баффов на 40%"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "dao_control",
+              "description": "Позволяет использовать способности союзников"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crypto_starter_set",
+      "name": "Комплект Криптографа",
+      "rarity": "starter",
+      "items": [
+        "training_staff",
+        "training_shield",
+        "crypto_helmet",
+        "training_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "ap_regen",
+              "value": 1,
+              "description": "Восстанавливает 1 AP каждый ход"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "skill_boost",
+              "description": "Усиливает эффекты способностей на 20%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blockchain_starter_set",
+      "name": "Комплект Блокчейна",
+      "rarity": "starter",
+      "items": [
+        "training_sword",
+        "node_shield",
+        "training_helmet",
+        "cold_storage_armor"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "defense_up",
+              "value": 3,
+              "description": "Увеличивает защиту на 3"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "block_chance",
+              "value": 15,
+              "description": "15% шанс полностью заблокировать атаку"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web3_starter_set",
+      "name": "Комплект Web3",
+      "rarity": "starter",
+      "items": [
+        "training_bow",
+        "hash_shield",
+        "node_helmet",
+        "training_boots"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "crit_chance",
+              "value": 10,
+              "description": "Увеличивает шанс критического удара на 10%"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "dodge_chance",
+              "value": 15,
+              "description": "15% шанс уклониться от атаки"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bridge_protocol_set",
+      "name": "Комплект Мостов",
+      "rarity": "mixed",
+      "items": [
+        "bridge_wand",
+        "bridge_helmet",
+        "bridge_amulet",
+        "flash_loan_boots"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "transfer_speed",
+              "value": 50,
+              "description": "Ускоряет все переносы эффектов на 50%"
+            }
+          ]
+        },
+        {
+          "pieces": 3,
+          "effects": [
+            {
+              "type": "cross_chain",
+              "description": "Позволяет переносить эффекты между всеми союзниками"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "instant_transfer",
+              "description": "Все переносы эффектов становятся мгновенными"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validator_set",
+      "name": "Комплект Валидатора",
+      "rarity": "mixed",
+      "items": [
+        "validator_shield",
+        "consensus_armor",
+        "dao_crown",
+        "training_staff"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "validation_aura",
+              "description": "Увеличивает защиту ближайших союзников на 5"
+            }
+          ]
+        },
+        {
+          "pieces": 3,
+          "effects": [
+            {
+              "type": "consensus_power",
+              "description": "20% шанс отразить атаку обратно в противника"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "network_control",
+              "description": "Позволяет перенаправлять атаки врагов на другие цели"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oracle_network_set",
+      "name": "Комплект Оракул-сети",
+      "rarity": "mixed",
+      "items": [
+        "oracle_bow",
+        "oracle_amulet",
+        "training_helmet",
+        "quantum_boots"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "prediction_accuracy",
+              "value": 25,
+              "description": "Увеличивает точность предсказаний на 25%"
+            }
+          ]
+        },
+        {
+          "pieces": 3,
+          "effects": [
+            {
+              "type": "quantum_sight",
+              "description": "Позволяет видеть все возможные действия противника"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "timeline_manipulation",
+              "description": "Позволяет отменить одно действие противника за бой"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defi_protocol_set",
+      "name": "Комплект DeFi-протокола",
+      "rarity": "mixed",
+      "items": [
+        "defi_blade",
+        "defi_amulet",
+        "training_boots",
+        "smart_contract_shield"
+      ],
+      "bonuses": [
+        {
+          "pieces": 2,
+          "effects": [
+            {
+              "type": "yield_boost",
+              "value": 30,
+              "description": "Увеличивает все получаемые ресурсы на 30%"
+            }
+          ]
+        },
+        {
+          "pieces": 3,
+          "effects": [
+            {
+              "type": "liquidity_provision",
+              "description": "Создает щит из ликвидности при получении урона"
+            }
+          ]
+        },
+        {
+          "pieces": 4,
+          "effects": [
+            {
+              "type": "flash_execution",
+              "description": "Позволяет мгновенно применить два баффа за одно действие"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

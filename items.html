@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крипто Предметы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Крипто Предметы</h1>
+        <div class="items-count">
+            <p>Всего предметов: <span id="total-items">0</span></p>
+            <div class="items-count-details">
+                <span class="starter-count">Стартовые: <span id="starter-items">0</span></span>
+                <span class="common-count">Обычные: <span id="common-items">0</span></span>
+                <span class="rare-count">Редкие: <span id="rare-items">0</span></span>
+                <span class="epic-count">Эпические: <span id="epic-items">0</span></span>
+                <span class="legendary-count">Легендарные: <span id="legendary-items">0</span></span>
+            </div>
+        </div>
+        <nav>
+            <ul class="view-mode">
+                <li><button class="active" data-mode="items">Предметы</button></li>
+                <li><button data-mode="sets">Сеты</button></li>
+            </ul>
+            <ul class="rarity-filter">
+                <li><button class="active" data-rarity="all">Все</button></li>
+                <li><button data-rarity="starter">Стартовые</button></li>
+                <li><button data-rarity="common">Обычные</button></li>
+                <li><button data-rarity="rare">Редкие</button></li>
+                <li><button data-rarity="epic">Эпические</button></li>
+                <li><button data-rarity="legendary">Легендарные</button></li>
+            </ul>
+            <ul class="type-filter">
+                <li><button class="active" data-type="all">Все типы</button></li>
+                <li><button data-type="weapon">Оружие</button></li>
+                <li><button data-type="armor">Броня</button></li>
+                <li><button data-type="amulet">Амулеты</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="items-container" class="active-view">
+            <!-- Предметы будут добавлены через JavaScript -->
+        </section>
+
+        <section id="sets-container">
+            <!-- Сеты будут добавлены через JavaScript -->
+        </section>
+    </main>
+
+    <!-- Модальное окно для дерева способностей -->
+    <div id="abilities-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-item-name"></h2>
+                <div class="modal-item-stats"></div>
+            </div>
+            <div class="abilities-tree-container">
+                <div class="branches-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для сета -->
+    <div id="set-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-set-name"></h2>
+                <div class="modal-set-rarity"></div>
+            </div>
+            <div class="set-items-container">
+                <h3>Предметы в сете:</h3>
+                <div class="set-items-list"></div>
+            </div>
+            <div class="set-bonuses-container">
+                <h3>Бонусы сета:</h3>
+                <div class="set-bonuses-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Crypto Game Items © 2024</p>
+    </footer>
+
+    <script src="items.js"></script>
+</body>
+</html> 

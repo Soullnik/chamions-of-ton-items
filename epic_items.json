@@ -1,0 +1,1489 @@
+{
+  "weapons": {
+    "staves": [
+      {
+        "id": "web3_staff",
+        "name": "Посох Web3",
+        "type": "staff",
+        "rarity": "epic",
+        "damage": 12,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 2,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Децентрализованная магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Токенизация",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 18,
+                "area": "circle",
+                "range": 3,
+                "effects": [
+                  {
+                    "type": "stat_steal",
+                    "value": 3,
+                    "duration": 3,
+                    "description": "Ворует характеристики цели"
+                  },
+                  {
+                    "type": "defense_down",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Снижает защиту цели"
+                  }
+                ],
+                "description": "Наносит урон и ворует часть характеристик цели"
+              },
+              {
+                "level": 3,
+                "name": "DAO Консенсус",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 0,
+                "area": "circle",
+                "range": 2,
+                "effects": [
+                  {
+                    "type": "mass_control",
+                    "duration": 2,
+                    "description": "Заставляет врагов атаковать друг друга"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Вызывает замешательство"
+                  }
+                ],
+                "description": "Заставляет всех врагов в радиусе 2 клеток атаковать друг друга"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Web3 Инновации",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Метавселенная",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "reality_shift",
+                    "duration": 2,
+                    "description": "Создает альтернативную реальность"
+                  },
+                  {
+                    "type": "dodge_up",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Увеличивает уклонение"
+                  }
+                ],
+                "description": "Создает альтернативную реальность, повышающую уклонение"
+              },
+              {
+                "level": 3,
+                "name": "Интероперабельность",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "effect_copy",
+                    "duration": 2,
+                    "description": "Копирует положительные эффекты союзников"
+                  },
+                  {
+                    "type": "effect_share",
+                    "duration": 2,
+                    "description": "Делится эффектами с союзниками"
+                  }
+                ],
+                "description": "Копирует и распределяет положительные эффекты между союзниками"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Цифровая революция",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Disruption",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 12,
+                "area": "line",
+                "effects": [
+                  {
+                    "type": "ability_block",
+                    "duration": 2,
+                    "description": "Блокирует использование способностей"
+                  }
+                ],
+                "description": "Блокирует способности целей на линии"
+              },
+              {
+                "level": 3,
+                "name": "Цифровой шторм",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 20,
+                "area": "circle",
+                "range": 3,
+                "effects": [
+                  {
+                    "type": "damage_amp",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Увеличивает получаемый урон"
+                  },
+                  {
+                    "type": "silence",
+                    "duration": 1,
+                    "description": "Запрещает использование способностей"
+                  }
+                ],
+                "description": "Наносит урон по области и усиливает получаемый урон целями"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "toncenter_staff",
+        "name": "Посох TON Center",
+        "type": "staff",
+        "rarity": "epic",
+        "damage": 14,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 3,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "API мощь",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "HTTP запрос",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "data_overload",
+                    "duration": 2,
+                    "description": "Перегружает противника данными"
+                  }
+                ],
+                "description": "Атакует противника потоком данных"
+              },
+              {
+                "level": 3,
+                "name": "DDOS атака",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 25,
+                "area": "circle",
+                "effects": [
+                  {
+                    "type": "stun",
+                    "duration": 2,
+                    "description": "Оглушает цели"
+                  }
+                ],
+                "description": "Массовая атака, оглушающая противников"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Валидаторская мощь",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Верификация",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "true_damage",
+                    "value": 15,
+                    "duration": 1,
+                    "description": "Наносит чистый урон"
+                  }
+                ],
+                "description": "Наносит неблокируемый урон"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "oracle_staff",
+        "name": "Посох Оракула",
+        "type": "staff",
+        "rarity": "epic",
+        "damage": 15,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Предсказания",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Цена будущего",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "future_sight",
+                    "duration": 2,
+                    "description": "Показывает следующие действия врага"
+                  },
+                  {
+                    "type": "critical_chance",
+                    "value": 25,
+                    "duration": 2,
+                    "description": "Увеличивает шанс крита"
+                  }
+                ],
+                "description": "Предсказывает действия и усиливает атаки"
+              },
+              {
+                "level": 3,
+                "name": "Рыночные данные",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "weakness_reveal",
+                    "duration": 3,
+                    "description": "Раскрывает слабости всех врагов"
+                  },
+                  {
+                    "type": "team_buff",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Усиливает всю команду"
+                  }
+                ],
+                "description": "Анализирует врагов и усиливает команду"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "swords": [
+      {
+        "id": "defi_blade",
+        "name": "Клинок DeFi",
+        "type": "one_handed_sword",
+        "rarity": "epic",
+        "damage": 15,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Финансовая мощь",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Leverage Attack",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "self_damage",
+                    "value": 5,
+                    "duration": 1,
+                    "description": "Наносит урон владельцу"
+                  },
+                  {
+                    "type": "damage_up",
+                    "value": 10,
+                    "duration": 1,
+                    "description": "Увеличивает урон"
+                  }
+                ],
+                "description": "Мощная атака с займом HP"
+              },
+              {
+                "level": 3,
+                "name": "Liquidation",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "execute",
+                    "value": 30,
+                    "duration": 1,
+                    "description": "Мгновенно убивает цель с HP ниже 30%"
+                  }
+                ],
+                "description": "Мгновенно убивает цель если у неё меньше 30% HP"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Yield Farming",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Harvest",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "heal",
+                    "value": 15,
+                    "duration": 1,
+                    "description": "Лечит владельца"
+                  },
+                  {
+                    "type": "ap_restore",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Восстанавливает AP"
+                  }
+                ],
+                "description": "Восстанавливает здоровье и AP"
+              },
+              {
+                "level": 3,
+                "name": "High APY",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "stat_scaling",
+                    "value": 5,
+                    "duration": 3,
+                    "description": "Увеличивает все характеристики"
+                  }
+                ],
+                "description": "Значительно увеличивает все характеристики"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Рыночные манипуляции",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Short Attack",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 15,
+                "effects": [
+                  {
+                    "type": "defense_down",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Снижает защиту"
+                  },
+                  {
+                    "type": "damage_vulnerability",
+                    "value": 20,
+                    "duration": 2,
+                    "description": "Увеличивает получаемый урон"
+                  }
+                ],
+                "description": "Ослабляет защиту цели и увеличивает получаемый ею урон"
+              },
+              {
+                "level": 3,
+                "name": "Market Manipulation",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "stat_swap",
+                    "duration": 2,
+                    "description": "Меняет местами атаку и защиту"
+                  }
+                ],
+                "description": "Меняет местами значения атаки и защиты"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "cex_blade",
+        "name": "Клинок Централизации",
+        "type": "two_handed_sword",
+        "rarity": "epic",
+        "damage": 16,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Биржевое господство",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Листинг",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "value_up",
+                    "value": 50,
+                    "duration": 2,
+                    "description": "Увеличивает урон"
+                  }
+                ],
+                "description": "Резко увеличивает урон"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "consensus_blade",
+        "name": "Клинок Консенсуса",
+        "type": "two_handed_sword",
+        "rarity": "epic",
+        "damage": 18,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила согласия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Единогласие",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 35,
+                "area": "circle",
+                "effects": [
+                  {
+                    "type": "stun",
+                    "duration": 2,
+                    "description": "Оглушает все цели"
+                  },
+                  {
+                    "type": "team_coordination",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Усиливает командные действия"
+                  }
+                ],
+                "description": "Мощная атака с командным усилением"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wands": [
+      {
+        "id": "oracle_wand",
+        "name": "Жезл Оракула",
+        "type": "wand",
+        "rarity": "epic",
+        "damage": 12,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Предсказания",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Price Prediction",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "dodge_up",
+                    "value": 50,
+                    "duration": 2,
+                    "description": "Увеличивает уклонение"
+                  },
+                  {
+                    "type": "foresight",
+                    "duration": 2,
+                    "description": "Показывает следующие действия врагов"
+                  }
+                ],
+                "description": "Предсказывает атаки противника, увеличивая шанс уклонения"
+              },
+              {
+                "level": 3,
+                "name": "Market Crash",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 20,
+                "area": "all_enemies",
+                "effects": [
+                  {
+                    "type": "stat_down",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Снижает все характеристики"
+                  },
+                  {
+                    "type": "stun",
+                    "duration": 1,
+                    "description": "Оглушает цели"
+                  }
+                ],
+                "description": "Снижает все характеристики врагов и оглушает их"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Рыночная аналитика",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Technical Analysis",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "reveal_weakness",
+                    "duration": 2,
+                    "description": "Выявляет слабости врагов"
+                  },
+                  {
+                    "type": "crit_chance_up",
+                    "value": 25,
+                    "duration": 2,
+                    "description": "Увеличивает шанс крита"
+                  }
+                ],
+                "description": "Анализирует врагов и увеличивает шанс критического удара"
+              },
+              {
+                "level": 3,
+                "name": "Fundamental Analysis",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "vulnerability_reveal",
+                    "duration": 3,
+                    "description": "Показывает все уязвимости"
+                  },
+                  {
+                    "type": "damage_amp",
+                    "value": 50,
+                    "duration": 2,
+                    "description": "Увеличивает урон по уязвимым целям"
+                  }
+                ],
+                "description": "Выявляет все уязвимости врагов и усиливает урон по ним"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Оракул времени",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Time Arbitrage",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "time_slow",
+                    "value": 50,
+                    "duration": 2,
+                    "description": "Замедляет время для врагов"
+                  }
+                ],
+                "description": "Замедляет время для врагов"
+              },
+              {
+                "level": 3,
+                "name": "Future Sight",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "precognition",
+                    "duration": 3,
+                    "description": "Позволяет видеть будущие атаки"
+                  },
+                  {
+                    "type": "counter_chance",
+                    "value": 100,
+                    "duration": 2,
+                    "description": "Гарантированно контратакует"
+                  }
+                ],
+                "description": "Позволяет предвидеть и контратаковать все атаки"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bridge_wand",
+        "name": "Жезл Моста",
+        "type": "wand",
+        "rarity": "epic",
+        "damage": 13,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Кросс-чейн магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Перенос токенов",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "effect_transfer",
+                    "duration": 2,
+                    "description": "Переносит эффекты между целями"
+                  }
+                ],
+                "description": "Переносит эффекты с одной цели на другую"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "metaverse_wand",
+        "name": "Жезл Метавселенной",
+        "type": "wand",
+        "rarity": "epic",
+        "damage": 14,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Виртуальная реальность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Искажение реальности",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "reality_shift",
+                    "duration": 2,
+                    "description": "Меняет местами врагов"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Дезориентирует цели"
+                  }
+                ],
+                "description": "Создает хаос в рядах противника"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "bows": [
+      {
+        "id": "oracle_bow",
+        "name": "Лук Оракула",
+        "type": "bow",
+        "rarity": "epic",
+        "damage": 16,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Предсказание цены",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Стрела будущего",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "future_sight",
+                    "duration": 2,
+                    "description": "Показывает будущие действия цели"
+                  }
+                ],
+                "description": "Выстрел, раскрывающий будущие действия"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dex_bow",
+        "name": "Лук DEX",
+        "type": "bow",
+        "rarity": "epic",
+        "damage": 15,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 6,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Торговые пары",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Двойной выстрел",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 15,
+                "effects": [
+                  {
+                    "type": "double_shot",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Два выстрела по разным целям"
+                  }
+                ],
+                "description": "Стреляет по двум целям одновременно"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "daggers": [
+      {
+        "id": "flash_loan_dagger",
+        "name": "Кинжал Флэш-займа",
+        "type": "dagger",
+        "rarity": "epic",
+        "damage": 14,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мгновенная атака",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Флэш-удар",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "instant_attack",
+                    "duration": 1,
+                    "description": "Мгновенная атака с возвратом AP"
+                  }
+                ],
+                "description": "Атакует и возвращает AP"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "governance_dagger",
+        "name": "Кинжал Управления",
+        "type": "dagger",
+        "rarity": "epic",
+        "damage": 12,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Контроль протокола",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Захват управления",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "control",
+                    "duration": 1,
+                    "description": "Позволяет контролировать цель"
+                  }
+                ],
+                "description": "Временно контролирует цель"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "shields": [
+      {
+        "id": "defi_shield",
+        "name": "Щит DeFi",
+        "type": "shield",
+        "rarity": "epic",
+        "defense": 12,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Финансовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Ликвидность",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "absorb_damage",
+                    "value": 20,
+                    "duration": 2,
+                    "description": "Поглощает урон и конвертирует в здоровье"
+                  }
+                ],
+                "description": "Конвертирует урон в здоровье"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "smart_contract_shield",
+        "name": "Щит Смарт-контракта",
+        "type": "shield",
+        "rarity": "epic",
+        "defense": 11,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Программируемая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Условная защита",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "conditional_defense",
+                    "value": 8,
+                    "duration": 2,
+                    "description": "Усиленная защита при низком HP"
+                  },
+                  {
+                    "type": "damage_reflection",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Отражает часть полученного урона"
+                  }
+                ],
+                "description": "Адаптивная защита, зависящая от состояния владельца"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "oracle_shield",
+        "name": "Щит Оракула",
+        "type": "shield",
+        "rarity": "epic",
+        "defense": 10,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Предсказательная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Предвидение атаки",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "attack_prediction",
+                    "duration": 2,
+                    "description": "Показывает следующие атаки противника"
+                  },
+                  {
+                    "type": "dodge_up",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Увеличивает шанс уклонения"
+                  }
+                ],
+                "description": "Предсказывает атаки и помогает уклониться"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "armor": {
+    "helmets": [
+      {
+        "id": "metaverse_helm",
+        "name": "Шлем Метавселенной",
+        "type": "helmet",
+        "rarity": "epic",
+        "defense": 10,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Виртуальная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Reality Distortion",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "illusion",
+                    "duration": 2,
+                    "description": "Создает иллюзию"
+                  },
+                  {
+                    "type": "dodge_up",
+                    "value": 20,
+                    "duration": 2,
+                    "description": "Увеличивает уклонение"
+                  }
+                ],
+                "description": "Создает иллюзию, отвлекающую врагов"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Цифровое восприятие",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Digital Vision",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "true_sight",
+                    "duration": "permanent",
+                    "description": "Позволяет видеть невидимых врагов"
+                  },
+                  {
+                    "type": "crit_chance_up",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Увеличивает шанс крита"
+                  }
+                ],
+                "description": "Улучшает восприятие и точность атак"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "nft_helm",
+        "name": "NFT Шлем",
+        "type": "helmet",
+        "rarity": "epic",
+        "defense": 11,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Уникальность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Редкий трейт",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "unique_defense",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Уникальная защита"
+                  }
+                ],
+                "description": "Обеспечивает уникальную защиту"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dao_crown",
+        "name": "Корона DAO",
+        "type": "helmet",
+        "rarity": "epic",
+        "defense": 12,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Власть сообщества",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Децентрализованное управление",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "team_buff",
+                    "value": 3,
+                    "duration": "permanent",
+                    "description": "Усиливает всю команду"
+                  },
+                  {
+                    "type": "decision_making",
+                    "duration": "permanent",
+                    "description": "Улучшает командные решения"
+                  }
+                ],
+                "description": "Улучшает командное взаимодействие"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "body_armor": [
+      {
+        "id": "consensus_armor",
+        "name": "Броня Консенсуса",
+        "type": "body_armor",
+        "rarity": "epic",
+        "defense": 12,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Распределенная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Proof of Stake",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_reflection",
+                    "value": 30,
+                    "duration": "permanent",
+                    "description": "Отражает часть урона"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 3,
+                    "duration": "permanent",
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Отражает 30% получаемого урона"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Валидация",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Network Security",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "status_immunity",
+                    "duration": "permanent",
+                    "description": "Иммунитет к случайному дебаффу"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Защищает от случайного негативного эффекта"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dao_armor",
+        "name": "Броня DAO",
+        "type": "body_armor",
+        "rarity": "epic",
+        "defense": 13,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Децентрализованное управление",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Голосование",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "team_buff",
+                    "value": 20,
+                    "duration": 3,
+                    "description": "Усиливает всю команду"
+                  }
+                ],
+                "description": "Усиливает всех членов команды"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "defi_protocol_armor",
+        "name": "Броня DeFi Протокола",
+        "type": "body_armor",
+        "rarity": "epic",
+        "defense": 14,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Финансовая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Автоматический маркет-мейкер",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_conversion",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Конвертирует часть урона в здоровье"
+                  },
+                  {
+                    "type": "liquidity_shield",
+                    "value": 10,
+                    "duration": "permanent",
+                    "description": "Создает щит из ликвидности"
+                  }
+                ],
+                "description": "Создает защитный барьер и восстанавливает здоровье"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "boots": [
+      {
+        "id": "quantum_boots",
+        "name": "Квантовые Ботинки",
+        "type": "boots",
+        "rarity": "epic",
+        "defense": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Квантовые скачки",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Quantum Leap",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "teleport",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Телепортация на 3 клетки"
+                  },
+                  {
+                    "type": "dodge_up",
+                    "value": 20,
+                    "duration": 1,
+                    "description": "Временно увеличивает уклонение"
+                  }
+                ],
+                "description": "Телепортация на 3 клетки"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Квантовая запутанность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Entanglement",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "position_swap",
+                    "duration": 1,
+                    "description": "Меняется местами с целью"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 1,
+                    "description": "Дезориентирует цель"
+                  }
+                ],
+                "description": "Меняется местами с целью и дезориентирует её"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "defi_boots",
+        "name": "Ботинки DeFi",
+        "type": "boots",
+        "rarity": "epic",
+        "defense": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Ликвидность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Быстрый своп",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "position_swap",
+                    "duration": 1,
+                    "description": "Меняется позицией с союзником"
+                  },
+                  {
+                    "type": "speed_up",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Увеличивает скорость обоих"
+                  }
+                ],
+                "description": "Быстрая смена позиций с усилением скорости"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "smart_contract_boots",
+        "name": "Ботинки Смарт-контракта",
+        "type": "boots",
+        "rarity": "epic",
+        "defense": 8,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Программируемое движение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Условный путь",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "conditional_movement",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Дополнительное движение при низком HP"
+                  },
+                  {
+                    "type": "path_memory",
+                    "duration": 3,
+                    "description": "Запоминает путь для быстрого возврата"
+                  }
+                ],
+                "description": "Адаптивное передвижение с запоминанием пути"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dao_boots",
+        "name": "Ботинки DAO",
+        "type": "boots",
+        "rarity": "epic",
+        "defense": 9,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Коллективное движение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Командный марш",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "team_movement",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Позволяет всей команде двигаться как одно целое"
+                  },
+                  {
+                    "type": "formation_bonus",
+                    "value": 3,
+                    "duration": 2,
+                    "description": "Увеличивает защиту в строю"
+                  }
+                ],
+                "description": "Координирует движение всей команды с защитным бонусом"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "amulets": [
+      {
+        "id": "defi_amulet",
+        "name": "Амулет DeFi",
+        "type": "amulet",
+        "rarity": "epic",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Финансовая магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Yield Farming",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "resource_generation",
+                    "value": 2,
+                    "duration": "permanent",
+                    "description": "Генерирует ресурсы каждый ход"
+                  },
+                  {
+                    "type": "stat_boost",
+                    "value": 3,
+                    "duration": "permanent",
+                    "description": "Увеличивает все характеристики"
+                  }
+                ],
+                "description": "Пассивно генерирует ресурсы и усиливает характеристики"
+              },
+              {
+                "level": 3,
+                "name": "Liquidity Pool",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "resource_share",
+                    "duration": 3,
+                    "description": "Делится ресурсами с командой"
+                  },
+                  {
+                    "type": "team_heal",
+                    "value": 5,
+                    "duration": 1,
+                    "description": "Лечит всю команду"
+                  }
+                ],
+                "description": "Создает пул ресурсов для команды"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "oracle_amulet",
+        "name": "Амулет Оракула",
+        "type": "amulet",
+        "rarity": "epic",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Предсказания",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Рыночный анализ",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "crit_prediction",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Показывает вероятность критического удара"
+                  },
+                  {
+                    "type": "dodge_prediction",
+                    "value": 20,
+                    "duration": "permanent",
+                    "description": "Показывает вероятность уклонения"
+                  }
+                ],
+                "description": "Предсказывает критические моменты боя"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "dao_amulet",
+        "name": "Амулет DAO",
+        "type": "amulet",
+        "rarity": "epic",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Управление протоколом",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Голосование",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "team_buff_choice",
+                    "duration": 2,
+                    "description": "Команда выбирает один из трех случайных баффов"
+                  },
+                  {
+                    "type": "governance_token",
+                    "value": 1,
+                    "duration": 1,
+                    "description": "Получает токен управления для следующего голосования"
+                  }
+                ],
+                "description": "Позволяет команде выбирать баффы"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 

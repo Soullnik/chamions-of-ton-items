@@ -1,0 +1,1193 @@
+{
+  "weapons": {
+    "staves": [
+      {
+        "id": "satoshi_staff",
+        "name": "Посох Сатоши",
+        "type": "staff",
+        "rarity": "legendary",
+        "damage": 30,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Наследие Биткоина",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Генезис блок",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 40,
+                "area": "circle",
+                "range": 3,
+                "effects": [
+                  {
+                    "type": "chain_start",
+                    "duration": 3,
+                    "description": "Создает новую цепочку эффектов"
+                  },
+                  {
+                    "type": "value_growth",
+                    "value": 5,
+                    "duration": 3,
+                    "description": "Увеличивает силу каждый ход"
+                  }
+                ],
+                "description": "Создает мощную цепную реакцию"
+              },
+              {
+                "level": 3,
+                "name": "Халвинг",
+                "type": "active",
+                "ap_cost": 8,
+                "damage": 50,
+                "effects": [
+                  {
+                    "type": "double_power",
+                    "duration": 2,
+                    "description": "Удваивает силу следующих атак"
+                  },
+                  {
+                    "type": "scarcity_effect",
+                    "duration": "permanent",
+                    "description": "Увеличивает ценность всех эффектов"
+                  }
+                ],
+                "description": "Редкое но мощное усиление"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Цифровое золото",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "HODL Power",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "damage_store",
+                    "duration": 3,
+                    "description": "Накапливает полученный урон"
+                  },
+                  {
+                    "type": "defense_up",
+                    "value": 5,
+                    "duration": 3,
+                    "description": "Увеличивает защиту"
+                  }
+                ],
+                "description": "Накапливает урон для последующего высвобождения"
+              },
+              {
+                "level": 3,
+                "name": "Bull Market",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": "stored_damage",
+                "effects": [
+                  {
+                    "type": "release_damage",
+                    "value": 2,
+                    "duration": 1,
+                    "description": "Высвобождает накопленный урон с удвоенной силой"
+                  }
+                ],
+                "description": "Высвобождает накопленный урон с удвоенной силой"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Криптоанархия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Децентрализованный удар",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 20,
+                "area": "all",
+                "effects": [
+                  {
+                    "type": "random_effect",
+                    "duration": 2,
+                    "description": "Случайный эффект на каждую цель"
+                  }
+                ],
+                "description": "Атакует все цели со случайными эффектами"
+              },
+              {
+                "level": 3,
+                "name": "Крипто-хаос",
+                "type": "active",
+                "ap_cost": 7,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "effect_randomizer",
+                    "duration": 3,
+                    "description": "Перемешивает все активные эффекты между целями"
+                  }
+                ],
+                "description": "Перемешивает все активные эффекты между целями"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "durov_staff",
+        "name": "Легендарный Посох Дурова",
+        "type": "staff",
+        "rarity": "legendary",
+        "damage": 30,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 4,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила Telegram",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Массовая рассылка Premium",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 35,
+                "area": "all_enemies",
+                "effects": [
+                  {
+                    "type": "premium_spam",
+                    "duration": 3,
+                    "description": "Спамит премиум-контентом"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Вызывает замешательство"
+                  }
+                ],
+                "description": "Атакует всех врагов премиум-спамом"
+              },
+              {
+                "level": 3,
+                "name": "Канал на миллион",
+                "type": "active",
+                "ap_cost": 7,
+                "damage": 40,
+                "effects": [
+                  {
+                    "type": "mass_control",
+                    "duration": 3,
+                    "description": "Контролирует всех врагов"
+                  },
+                  {
+                    "type": "viral_effect",
+                    "duration": 2,
+                    "description": "Эффекты распространяются на соседние цели"
+                  }
+                ],
+                "description": "Массовый контроль с вирусным эффектом"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Криптограмм",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "TON Integration",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "wallet_drain",
+                    "value": 20,
+                    "duration": 2,
+                    "description": "Крадет криптовалюту противника"
+                  }
+                ],
+                "description": "Атакует криптокошелек противника"
+              },
+              {
+                "level": 3,
+                "name": "Блокчейн-революция",
+                "type": "active",
+                "ap_cost": 8,
+                "damage": 45,
+                "area": "circle",
+                "range": 3,
+                "effects": [
+                  {
+                    "type": "chain_reaction",
+                    "duration": 3,
+                    "description": "Создает цепную реакцию урона"
+                  }
+                ],
+                "description": "Запускает разрушительную цепную реакцию"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "swords": [
+      {
+        "id": "vitalik_blade",
+        "name": "Клинок Виталика",
+        "type": "two_handed_sword",
+        "rarity": "legendary",
+        "damage": 35,
+        "ap_cost": 5,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила Эфира",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Смарт-контракт атака",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 45,
+                "effects": [
+                  {
+                    "type": "execute_code",
+                    "duration": 3,
+                    "description": "Запускает серию автоматических атак"
+                  },
+                  {
+                    "type": "gas_burn",
+                    "value": 10,
+                    "duration": 2,
+                    "description": "Сжигает ману врага"
+                  }
+                ],
+                "description": "Программируемая серия ударов"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Смарт-контракты",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Условная атака",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "conditional_bonus",
+                    "value": 15,
+                    "duration": 1,
+                    "description": "Дополнительный урон по целям с низким HP"
+                  }
+                ],
+                "description": "Увеличенный урон по целям с низким здоровьем"
+              },
+              {
+                "level": 3,
+                "name": "Распределенный удар",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "damage_distribution",
+                    "duration": 1,
+                    "description": "Распределяет урон между всеми врагами"
+                  }
+                ],
+                "description": "Распределяет урон между всеми врагами"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Масштабируемость",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Layer 2",
+                "type": "active",
+                "ap_cost": 3,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "double_next",
+                    "duration": 1,
+                    "description": "Удваивает эффект следующей способности"
+                  }
+                ],
+                "description": "Удваивает эффект следующей способности"
+              },
+              {
+                "level": 3,
+                "name": "Шардинг",
+                "type": "active",
+                "ap_cost": 8,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "multi_attack",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Атакует три случайные цели"
+                  },
+                  {
+                    "type": "defense_down",
+                    "value": 2,
+                    "duration": 2,
+                    "description": "Снижает защиту целей"
+                  }
+                ],
+                "description": "Атакует несколько целей одновременно"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ton_blade",
+        "name": "Клинок The Open Network",
+        "type": "two_handed_sword",
+        "rarity": "legendary",
+        "damage": 38,
+        "ap_cost": 4,
+        "hands": 2,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила сети",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Валидаторский удар",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 45,
+                "effects": [
+                  {
+                    "type": "validation",
+                    "duration": 2,
+                    "description": "Проверяет и уничтожает защиту цели"
+                  },
+                  {
+                    "type": "defense_break",
+                    "value": 100,
+                    "duration": 1,
+                    "description": "Полностью пробивает защиту"
+                  }
+                ],
+                "description": "Пробивает любую защиту цели"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Мощь блокчейна",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Proof of Work",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 50,
+                "effects": [
+                  {
+                    "type": "mining_power",
+                    "value": 30,
+                    "duration": 2,
+                    "description": "Увеличивает урон с каждым ударом"
+                  }
+                ],
+                "description": "Накапливает силу с каждой атакой"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wands": [
+      {
+        "id": "meme_wand",
+        "name": "Жезл Мемов",
+        "type": "wand",
+        "rarity": "legendary",
+        "damage": 28,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мемология",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "WAGMI",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "team_buff",
+                    "value": 50,
+                    "duration": 3,
+                    "description": "Усиливает характеристики команды"
+                  }
+                ],
+                "description": "Усиливает всю команду на 50% на 3 хода"
+              },
+              {
+                "level": 3,
+                "name": "FUD Storm",
+                "type": "active",
+                "ap_cost": 7,
+                "damage": 25,
+                "area": "all_enemies",
+                "effects": [
+                  {
+                    "type": "panic",
+                    "duration": 2,
+                    "description": "Вызывает панику"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 2,
+                    "description": "Вызывает замешательство"
+                  }
+                ],
+                "description": "Массовая атака, вызывающая панику у всех врагов"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Вирусный маркетинг",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Viral Tweet",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 15,
+                "effects": [
+                  {
+                    "type": "spread_effect",
+                    "duration": 3,
+                    "description": "Эффекты распространяются на соседние цели"
+                  }
+                ],
+                "description": "Эффекты атаки распространяются на соседние цели"
+              },
+              {
+                "level": 3,
+                "name": "Pump It",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 0,
+                "effects": [
+                  {
+                    "type": "buff_amplify",
+                    "value": 100,
+                    "duration": 2,
+                    "description": "Удваивает силу всех баффов"
+                  }
+                ],
+                "description": "Удваивает силу всех положительных эффектов"
+              }
+            ]
+          },
+          "branch_3": {
+            "name": "Токсичность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Toxic Maximalism",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 20,
+                "effects": [
+                  {
+                    "type": "defense_down",
+                    "value": 5,
+                    "duration": 2,
+                    "description": "Сильно снижает защиту"
+                  },
+                  {
+                    "type": "damage_up",
+                    "value": 10,
+                    "duration": 2,
+                    "description": "Сильно увеличивает урон"
+                  }
+                ],
+                "description": "Жертвует защитой ради мощной атаки"
+              },
+              {
+                "level": 3,
+                "name": "Maximum Pain",
+                "type": "active",
+                "ap_cost": 8,
+                "damage": 35,
+                "effects": [
+                  {
+                    "type": "self_damage",
+                    "value": 10,
+                    "duration": 1,
+                    "description": "Наносит урон себе"
+                  },
+                  {
+                    "type": "execute",
+                    "value": 30,
+                    "duration": 1,
+                    "description": "Мгновенно убивает цель с HP ниже 30%"
+                  }
+                ],
+                "description": "Мощнейшая атака с риском для жизни"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scammer_wand",
+        "name": "Жезл Скамера 3000",
+        "type": "wand",
+        "rarity": "legendary",
+        "damage": 32,
+        "ap_cost": 3,
+        "hands": 1,
+        "range": 5,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мошеннические схемы",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Фальшивый смарт-контракт",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "gold_steal",
+                    "value": 50,
+                    "duration": 1,
+                    "description": "Крадет золото у цели"
+                  },
+                  {
+                    "type": "confusion",
+                    "duration": 3,
+                    "description": "Дезориентирует цель"
+                  }
+                ],
+                "description": "Обманывает и грабит цель"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Понци-схема",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Пирамида",
+                "type": "active",
+                "ap_cost": 7,
+                "damage": 40,
+                "area": "pyramid",
+                "effects": [
+                  {
+                    "type": "multi_steal",
+                    "value": 10,
+                    "duration": 3,
+                    "description": "Крадет ресурсы у всех целей"
+                  },
+                  {
+                    "type": "power_accumulation",
+                    "duration": 3,
+                    "description": "Усиливается от количества целей"
+                  }
+                ],
+                "description": "Создает магическую пирамиду, ворующую ресурсы"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "bows": [
+      {
+        "id": "bitcoin_bow",
+        "name": "Лук Биткоина",
+        "type": "bow",
+        "rarity": "legendary",
+        "damage": 28,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 8,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Сила первой криптовалюты",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Золотая стрела",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 35,
+                "effects": [
+                  {
+                    "type": "value_increase",
+                    "value": 10,
+                    "duration": 3,
+                    "description": "Увеличивает урон с каждым ходом"
+                  }
+                ],
+                "description": "Растущий урон со временем"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "eth_bow",
+        "name": "Лук Эфириума",
+        "type": "bow",
+        "rarity": "legendary",
+        "damage": 25,
+        "ap_cost": 3,
+        "hands": 2,
+        "range": 7,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Смарт-контракт выстрел",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Программируемая стрела",
+                "type": "active",
+                "ap_cost": 6,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "chain_effect",
+                    "duration": 3,
+                    "description": "Создает цепочку эффектов"
+                  }
+                ],
+                "description": "Выстрел с программируемыми эффектами"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "daggers": [
+      {
+        "id": "whale_dagger",
+        "name": "Кинжал Кита",
+        "type": "dagger",
+        "rarity": "legendary",
+        "damage": 22,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Рыночная манипуляция",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Дамп",
+                "type": "active",
+                "ap_cost": 5,
+                "damage": 30,
+                "effects": [
+                  {
+                    "type": "market_crash",
+                    "duration": 2,
+                    "description": "Обрушивает все характеристики цели"
+                  }
+                ],
+                "description": "Критическое снижение характеристик"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "hacker_dagger",
+        "name": "Кинжал Хакера",
+        "type": "dagger",
+        "rarity": "legendary",
+        "damage": 20,
+        "ap_cost": 2,
+        "hands": 1,
+        "range": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Взлом",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Эксплойт",
+                "type": "active",
+                "ap_cost": 4,
+                "damage": 25,
+                "effects": [
+                  {
+                    "type": "vulnerability",
+                    "duration": 2,
+                    "description": "Находит уязвимости цели"
+                  }
+                ],
+                "description": "Использует уязвимости цели"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "shields": [
+      {
+        "id": "bitcoin_shield",
+        "name": "Щит Биткоина",
+        "type": "shield",
+        "rarity": "legendary",
+        "defense": 25,
+        "ap_cost": 1,
+        "hands": 1,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Криптографическая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Proof of Work",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "unbreakable",
+                    "duration": 2,
+                    "description": "Полная неуязвимость"
+                  }
+                ],
+                "description": "Временная неуязвимость"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "armor": {
+    "helmets": [
+      {
+        "id": "doge_helm",
+        "name": "Шлем Доге",
+        "type": "helmet",
+        "rarity": "legendary",
+        "defense": 20,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мем-защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Much Wow",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "luck_up",
+                    "value": 50,
+                    "duration": "permanent",
+                    "description": "Увеличивает удачу"
+                  },
+                  {
+                    "type": "crit_chance",
+                    "value": 15,
+                    "duration": "permanent",
+                    "description": "Увеличивает шанс крита"
+                  }
+                ],
+                "description": "Значительно увеличивает удачу и шанс критического удара"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "To The Moon",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Rocket Launch",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "stat_scaling",
+                    "duration": 3,
+                    "description": "Характеристики растут каждый ход"
+                  }
+                ],
+                "description": "Характеристики увеличиваются каждый ход"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "privacy_helm",
+        "name": "Шлем Приватности",
+        "type": "helmet",
+        "rarity": "legendary",
+        "defense": 22,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Анонимность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Mixer Protocol",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "invisibility",
+                    "duration": 2,
+                    "description": "Делает владельца невидимым"
+                  },
+                  {
+                    "type": "trace_removal",
+                    "duration": "permanent",
+                    "description": "Скрывает следы передвижения"
+                  }
+                ],
+                "description": "Полная маскировка владельца"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "nakamoto_helm",
+        "name": "Шлем Накамото",
+        "type": "helmet",
+        "rarity": "legendary",
+        "defense": 25,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Анонимность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Криптографическая защита",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "perfect_block",
+                    "value": 30,
+                    "duration": "permanent",
+                    "description": "Шанс полностью заблокировать урон"
+                  },
+                  {
+                    "type": "identity_hide",
+                    "duration": "permanent",
+                    "description": "Скрывает статусы от врагов"
+                  }
+                ],
+                "description": "Непроницаемая защита и маскировка"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "body_armor": [
+      {
+        "id": "blockchain_armor",
+        "name": "Броня Блокчейна",
+        "type": "body_armor",
+        "rarity": "legendary",
+        "defense": 25,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Неизменяемая защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Immutable Defense",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "immunity",
+                    "duration": "permanent",
+                    "description": "Иммунитет к случайной атаке"
+                  }
+                ],
+                "description": "Полный иммунитет к одной случайной атаке за бой"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Распределенная защита",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Network Effect",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "defense_share",
+                    "duration": "permanent",
+                    "description": "Делится защитой с союзниками"
+                  }
+                ],
+                "description": "Увеличивает защиту всей команды"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "whale_armor",
+        "name": "Броня Кита",
+        "type": "body_armor",
+        "rarity": "legendary",
+        "defense": 28,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Рыночное влияние",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Манипуляция рынком",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "market_crash",
+                    "value": 40,
+                    "duration": 2,
+                    "description": "Снижает характеристики всех врагов"
+                  },
+                  {
+                    "type": "self_buff",
+                    "value": 40,
+                    "duration": 2,
+                    "description": "Усиливает владельца"
+                  }
+                ],
+                "description": "Манипулирует характеристиками всех участников"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "blockchain_plate",
+        "name": "Доспех Блокчейна",
+        "type": "body_armor",
+        "rarity": "legendary",
+        "defense": 30,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Неизменность",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Консенсус",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "damage_distribution",
+                    "value": 50,
+                    "duration": "permanent",
+                    "description": "Распределяет урон по всей команде"
+                  },
+                  {
+                    "type": "immutable_defense",
+                    "value": 15,
+                    "duration": "permanent",
+                    "description": "Неснижаемая защита"
+                  }
+                ],
+                "description": "Нерушимая командная защита"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "boots": [
+      {
+        "id": "moon_boots",
+        "name": "Ботинки To The Moon",
+        "type": "boots",
+        "rarity": "legendary",
+        "defense": 15,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Лунная походка",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Moon Walk",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "fly",
+                    "duration": 2,
+                    "description": "Позволяет летать"
+                  }
+                ],
+                "description": "Позволяет летать над препятствиями и врагами"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Ракетный ускоритель",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Rocket Jump",
+                "type": "active",
+                "ap_cost": 3,
+                "effects": [
+                  {
+                    "type": "teleport",
+                    "value": 4,
+                    "duration": 1,
+                    "description": "Телепортация на 4 клетки"
+                  }
+                ],
+                "description": "Мгновенное перемещение на большое расстояние"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "flash_loan_boots",
+        "name": "Ботинки Флэш-займа",
+        "type": "boots",
+        "rarity": "legendary",
+        "defense": 18,
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мгновенное перемещение",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Арбитраж",
+                "type": "active",
+                "ap_cost": 4,
+                "effects": [
+                  {
+                    "type": "multi_teleport",
+                    "value": 3,
+                    "duration": 1,
+                    "description": "Позволяет сделать 3 телепорта"
+                  },
+                  {
+                    "type": "speed_buff",
+                    "value": 50,
+                    "duration": 1,
+                    "description": "Увеличивает скорость в полтора раза"
+                  }
+                ],
+                "description": "Мгновенное перемещение между точками"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "amulets": [
+      {
+        "id": "genesis_amulet",
+        "name": "Амулет Genesis",
+        "type": "amulet",
+        "rarity": "legendary",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Первородная сила",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Early Adoption",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "stat_scaling",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает все характеристики"
+                  }
+                ],
+                "description": "Все характеристики растут на 1% каждый ход"
+              }
+            ]
+          },
+          "branch_2": {
+            "name": "Инвестиции",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Compound Interest",
+                "type": "passive",
+                "effects": [
+                  {
+                    "type": "effect_duration",
+                    "value": 1,
+                    "duration": "permanent",
+                    "description": "Увеличивает длительность эффектов"
+                  }
+                ],
+                "description": "Увеличивает длительность всех эффектов на 1 ход"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "pepe_amulet",
+        "name": "Амулет Пепе",
+        "type": "amulet",
+        "rarity": "legendary",
+        "abilities_tree": {
+          "branch_1": {
+            "name": "Мем-магия",
+            "abilities": [
+              {
+                "level": 1,
+                "name": "Rare Pepe",
+                "type": "active",
+                "ap_cost": 5,
+                "effects": [
+                  {
+                    "type": "meme_power",
+                    "value": 100,
+                    "duration": 2,
+                    "description": "Активирует силу мемов"
+                  },
+                  {
+                    "type": "confusion_aura",
+                    "duration": 3,
+                    "description": "Создает ауру замешательства"
+                  }
+                ],
+                "description": "Призывает силу легендарных мемов"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+} 
